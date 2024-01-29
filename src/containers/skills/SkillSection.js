@@ -9,10 +9,10 @@ import CloudInfraImg from "./CloudInfraImg";
 import DesignImg from "./DesignImg";
 
 function GetSkillSvg(props) {
-  if (props.fileName === "FullStackImg")
-    return <FullStackImg theme={props.theme} />;
-  else if (props.fileName === "DataScienceImg")
+  if (props.fileName === "DataScienceImg")
     return <DataScienceImg theme={props.theme} />;
+  else if (props.fileName === "FullStackImg")
+    return <FullStackImg theme={props.theme} />;
   else if (props.fileName === "CloudInfraImg")
     return <CloudInfraImg theme={props.theme} />;
   return <DesignImg theme={props.theme} />;
@@ -23,13 +23,13 @@ class SkillSection extends Component {
     const theme = this.props.theme;
     return (
       <div>
-        {skills.data.map((skill) => {
+        {skills.data.map((skill, i) => {
           return (
-            <div className="skills-main-div">
+            <div key={i} className="skills-main-div">
               <Fade left duration={2000}>
                 <div className="skills-image-div">
                   {/* <img
-                    alt="Ashutosh is Analysing Data"
+                    alt="Monesh Venkul is Analysing Data"
                     src={require(`../../assests/images/${skill.imagePath}`)}
                   ></img> */}
                   <GetSkillSvg fileName={skill.fileName} theme={theme} />
@@ -47,9 +47,10 @@ class SkillSection extends Component {
                 </Fade>
                 <Fade right duration={2000}>
                   <div>
-                    {skill.skills.map((skillSentence) => {
+                    {skill.skills.map((skillSentence, i) => {
                       return (
                         <p
+                          key={i}
                           className="subTitle skills-text"
                           style={{ color: theme.secondaryText }}
                         >

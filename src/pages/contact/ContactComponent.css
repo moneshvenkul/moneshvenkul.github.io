@@ -33,12 +33,9 @@
 }
 
 .contact-heading-img-div {
+  display: flex;
   align-items: center;
   justify-content: center;
-  height: auto; 
-  width: auto; 
-  max-width: 30%; 
-  max-height: 10%;
 }
 
 .blog-heading-img-div {

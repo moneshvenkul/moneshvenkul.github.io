@@ -1,1 +1,9 @@
-{"data":[]}
+{
+  "data": [
+    {
+      "login": "Gator-Bytes-Foundation",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/32115172?v=4",
+      "__typename": "Organization"
+    }
+  ]
+}

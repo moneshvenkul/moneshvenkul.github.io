@@ -1,55 +1,164 @@
 {
-	"title": "Experience",
-	"subtitle": "Work, Internship and Volunteership",
-	"description":
-		"I have worked with many evolving startups as ML and DL Developer, Designer and Software Architect. I have also worked with some well established companies mostly as AI Developer. I love organising events and that is why I am also involved with many opensource communities as a representative.",
-	"header_image_path": "experience.svg",
-	"sections": [
-		{
-			"title": "Work",
-			"experiences": [
-				{
-					"title": "Android and ML Developer",
-					"company": "Muffito Incorporation",
-					"company_url": "https://www.linkedin.com/company/muffito-inc/about/",
-					"logo_path": "muffito_logo.png",
-					"duration": "May 2018 - Oct 2018",
-					"location": "Pune, Maharashtra",
-					"description":
-						"I have created complete Android Application for locating Pub, Bar and beverage shops around you. I have also worked on implementation of algorithms for Face Detection, Text extraction from Image. I was involved in a team for creating complete software architecure of mobile and web application as well as admin panel for company.",
-					"color": "#9b1578"
-				},
-				{
-					"title": "Android Developer",
-					"company": "FreeCopy Pvt. Ltd.",
-					"company_url": "https://www.linkedin.com/company/freecopy/about/",
-					"logo_path": "freecopy_logo.png",
-					"duration": "Nov 2017 - Dec 2017",
-					"location": "Ahmedabad, Gujarat",
-					"description":
-						"FreeCopy is the Start up from Indian Institute of Management, Ahmedabad. I have changed the integration of the whole app from Google to Firebase. I learnt the efﬁcient ways of Data communications like Retroﬁt, Eventbus etc. I experienced the real time start up. I learnt the Design thinking of UI on perspective of People.",
-					"color": "#fc1f20"
-				}
-			]
-		},
-		{
-			"title": "Internships",
-			"experiences": [
-				{
-					"title": "Data Science Research Intern",
-					"company": "Delhivery Pvt. Ltd.",
-					"company_url": "https://www.delhivery.com/",
-					"logo_path": "delhivery_logo.png",
-					"duration": "May 2019 - Sept 2019",
-					"location": "Gurgaon, Haryana",
-					"description": "I have worked on project of predicting freight rates based on previous data. There were two objectives: (1) To build a forecasting engine to predict daily freight rates. (2) To embed feature in the model which can explain the seasonal major changes in freight rate based on regions and locations. I have closely worked with deep learning models in combination with statistical methods to create solution for this. At the end of internship, I had created model deployed on AWS EC2 with the use of Kafka stream jobs, ElasticSearch and PostgreSQL.",
-					"color": "#ee3c26"
-				}
-			]
-		},
-		{
-			"title": "Volunteerships",
-			"experiences": []
-		}
-	]
+  "description": "I am an experienced Full-Stack Developer with a strong background in Python, Java, JavaScript, React, and Angular, skilled in building both client and server software. My career includes impactful roles at Stem Sims and HCL Technologies, where I led key projects and significantly enhanced user experiences through innovative solutions. As an educator at AlmaBetter and Udemy, I have contributed substantially to student learning and development. My expertise extends to cloud services, data analysis, and Agile methodologies, reflecting my comprehensive skill set in modern IT practices.",
+  "header_image_path": "experience.svg",
+  "sections": [
+    {
+      "title": "work",
+      "work": true,
+      "experiences": [
+        {
+          "title": "Full Stack Engineer",
+          "company": "Stem Sims",
+          "company_url": "https://www.stemsims.com/",
+          "logo_path": "stemsims_logo.png",
+          "duration": "April 2022 - September 2023",
+          "location": "Florida, United States",
+          "description": "At Stem Sims, as a Full-stack Software Intern, I played a pivotal role in enhancing user experience by implementing over 15 feature enhancements in just 3 months, utilizing my skills in Python and React.js for intuitive UI development and integrating RESTful APIs for improved back-end functionality. My daily engagement with the development team through Git and GitHub facilitated the successful introduction and merging of over 20 Pull Requests, while actively participating in over 12 Agile sprints using JIRA, which greatly aided in project management and direction. This period was marked by significant professional growth, as I honed my proficiency in tools like Visual Studio Code and Docker, leading to a 30% increase in development efficiency and a 25% enhancement in team collaboration, further augmented by invaluable insights from over 50 peer review sessions that substantially improved code quality and technical expertise.",
+          "color": "#ff0000"
+        },
+        {
+          "title": "Provost Scholarship",
+          "company": "University of New Haven",
+          "company_url": "https://www.newhaven.edu/",
+          "logo_path": "unh_logo.png",
+          "duration": "August 2022 - December 2023",
+          "location": "West Haven, Connecticut, United States",
+          "description": "In my strategic leadership role at the University of New Haven, I successfully utilized data-driven decision-making to spearhead the development and launch of three innovative academic programs. By applying thorough market analysis and enrollment forecasting, I achieved a notable 15% increase in student enrollment in the subsequent year. Additionally, I orchestrated six annual professional development workshops focused on advanced teaching methodologies and data literacy for faculty and staff. This initiative significantly enhanced academic productivity and led to a 20% increase in research publications, as quantified by analytical tracking tools. My commitment to continuous improvement was further demonstrated through comprehensive quarterly performance reviews and feedback sessions. By employing statistical analysis and performance metrics, I effectively elevated academic operations and maintained a 95% positive feedback rate from both students and faculty, as evidenced by satisfaction surveys and data analytics.",
+          "color": "#ff0000"
+        },
+        {
+          "title": "Full Stack Software Dev Instructor",
+          "company": "AlmaBetter",
+          "company_url": "https://www.almabetter.com/",
+          "logo_path": "AlmaBetter_Logo.jpg",
+          "duration": "May 2022 - December 2023",
+          "location": "Bengaluru, Karnataka",
+          "description": "As a Full Stack Software Dev Instructor at AlmaBetter, I played a pivotal role in guiding over 300 students across more than 15 batches, achieving an 85% job placement rate within six months, with 60% of these students securing positions at top-tier tech firms. My extensive experience in full-stack web development, encompassing technologies such as Python, Java, JavaScript, React, Angular, Node.js, Express JS, and SQL, was fundamental in designing and delivering over 500 hours of dynamic, project-based instruction annually. This effort was reflected in a consistently high student feedback score of 4.8/5. Additionally, I significantly enhanced student engagement by over 80%, as evidenced by a 90% success rate in students achieving their career goals. I also facilitated networking opportunities for 70% of the students, helping them forge valuable connections within the tech industry and furthering their career advancement.",
+          "color": "#0879bf"
+        },
+        {
+          "title": "Full Stack Software Engineer",
+          "company": "HCL Technologies",
+          "company_url": "https://www.hcltech.com/",
+          "logo_path": "hcl.png",
+          "duration": "August 2020 - August 2022",
+          "location": "Bengaluru, Karnataka",
+          "description": "At HCL Technologies, I excelled as a Software Engineer, architecting and developing over 10 intricate front-end and back-end applications annually for the banking sector. My work, deeply rooted in leveraging Spring Boot, Core Java, and microservices architecture, involved implementing RESTful APIs and integrating SQL and NoSQL databases, significantly enhancing application efficiency and scalability. I also spearheaded the quarterly deployment of five major applications, utilizing Azure DevOps and Microsoft Azure for CI/CD pipelines, which notably increased client satisfaction by 20%. My efforts and dedication were recognized with two prestigious company-wide awards for outstanding software engineering, underscoring my proficiency in coding standards, design patterns, and software optimization, and contributing significantly to the team's success and project deliverables.",
+          "color": "#0879bf"
+        }
+      ]
+    },
+    {
+      "title": "Internships",
+      "experiences": [
+        {
+          "title": "Technical Instructor",
+          "company": "Udemy",
+          "company_url": "https://www.udemy.com/user/monesh-venkul-vommi2/",
+          "logo_path": "udemy.png",
+          "duration": "December 2018 - July 2020",
+          "location": "Vizag, AndhraPradesh",
+          "description": "At Udemy, I made a significant educational impact by delivering a series of comprehensive, technology-focused courses, reaching over 40,000 students globally. My courses covered essential areas such as programming languages (Python, Java, JavaScript), web development frameworks, and software engineering principles, equipping students with vital skills for industry success. In pursuit of professional growth, I continuously refined my teaching methodologies, focusing on interactive learning and practical applications, which was reflected in an impressive average course rating of 4.7/5. This rating underscored my ability to effectively communicate complex technical concepts to a diverse, international student base. Aligned with Udemy's mission, I played a crucial role in increasing course accessibility and digital learning engagement by 15% year-over-year. My commitment extended to setting ambitious goals to empower an additional 20,000 students with advanced technical skills in the upcoming year, leveraging analytics and feedback to adapt course content for maximum impact and relevance.",
+          "color": "#9b1578"
+        },
+        {
+          "title": "Full Stack Web Developer",
+          "company": "Service4StartUp",
+          "company_url": "https://www.linkedin.com/company/service4startup/about/",
+          "logo_path": "service4startup.jfif",
+          "duration": "December 2018 - March 2019",
+          "location": "Chennai, TamilNadu",
+          "description": "My Internship role is to create a Web-based Product. Built a standalone Web Product through leading a team. We had many difficulties at first but we made a software development approach to identify the problems and solved the errors in the product. We also improved the efficiency of the website by overall 25% through Web-Optimization. This was an amazing opportunity to prove myself as a web developer. This internship has really boosted my skills. It had been great working with Service4Startup. They are very cooperative, encouraging and patient towards my work and myself. I heartily wish the company to grow towards higher standards in their domain. And Thank you so much for letting me be a part of your long Journey.",
+          "color": "#fc1f20"
+        },
+        {
+          "title": "Content Creator",
+          "company": "YouTube",
+          "company_url": "https://www.youtube.com/channel/UCRQ77SxTf4WRoJEO6YNPakA",
+          "logo_path": "youtube.png",
+          "duration": "December 2018 - August 2020",
+          "location": "Chennai, TamilNadu & Vizag, AndhraPradesh",
+          "description": "Self - Employed with no income but passion. Slowly growing with growing community. Will create better tutorials in future.",
+          "color": "orange"
+        },
+        {
+          "title": "Social Media Marketing Specialist",
+          "company": "mLearning Community",
+          "company_url": "http://www.m-learning.in/",
+          "logo_path": "mlearning.jpg",
+          "duration": "June 2018 - July 2018",
+          "location": "Chennai, TamilNadu",
+          "description": "Specialized in the skill of Social Marketing | Increased the Communities Interaction from users by 25% | Managed to Complete the work in due-date | Developed time management skills.",
+          "color": "blue"
+        },
+        {
+          "title": "Enterprise Resources Planning Developer",
+          "company": "Steel Plant",
+          "company_url": "https://www.vizagsteel.com/index.asp",
+          "logo_path": "steelplant.png",
+          "duration": "April 2018 - May 2018",
+          "location": "Chennai, TamilNadu",
+          "description": "Professional work | Real time Exposure to Industry | Made Presentations and developed the skill of Professional level Resource Management.",
+          "color": "black"
+        },
+        {
+          "title": "App Developer",
+          "company": "Learnorama",
+          "company_url": "",
+          "logo_path": "learnorama.jpg",
+          "duration": "December 2017 — January 2018",
+          "location": "Chennai, TamilNadu",
+          "description": "Got the award of Best App Developer and Won the Hackathon competition through leading a team.",
+          "color": "pink"
+        },
+        {
+          "title": "Front End Web Developer",
+          "company": "Different Hair",
+          "company_url": "",
+          "logo_path": "differenthair.jpeg",
+          "duration": "July 2017 — September 2017",
+          "location": "Chennai, TamilNadu",
+          "description": "Designed Front End of the website and Improved user Interface of the website without a team",
+          "color": "green"
+        }
+      ]
+    },
+    {
+      "title": "Volunteerships",
+      "experiences": [
+        {
+          "title": "Student Volunteer",
+          "company": "Sathyabama University - Village Ticket",
+          "company_url": "https://www.sathyabama.ac.in/",
+          "logo_path": "college_logo.png",
+          "duration": "January 2019 – February 2019",
+          "location": "Chennai, TamilNadu",
+          "description": "Had been a Great experience volunteering in this event Village Ticket,it is a event to showcase village traditions and its natural aspects. Raised the funds and been a Active member throughout the event.",
+          "color": "#4285F4"
+        },
+        {
+          "title": "Front End Web Developer",
+          "company": "Different Hair",
+          "company_url": "",
+          "logo_path": "differenthair.jpeg",
+          "duration": "July 2017 — September 2017",
+          "location": "Chennai, TamilNadu",
+          "description": "Designed Front End of the website and Improved user Interface of the website without a team",
+          "color": "green"
+        },
+        {
+          "title": "Cognizant Student Partner",
+          "company": "Cognizant",
+          "company_url": "https://www.cognizant.com/",
+          "logo_path": "cognizant.jfif",
+          "duration": "Aug 2019 - May 2020",
+          "location": "Hyderabad, Telangana",
+          "description": "Microsoft Student Partner is a program for university students to lead the awareness and use of Cloud especially Azure tools in the development of their projects and startups. Under this program, I have organised hands on workshops and seminars to teach Cloud Computing concepts to students.",
+          "color": "#D83B01"
+        }
+      ]
+    }
+  ],
+  "subtitle": "work, Internship and Volunteership",
+  "title": "Experience"
 }

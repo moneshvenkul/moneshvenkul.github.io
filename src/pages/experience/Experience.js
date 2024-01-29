@@ -12,7 +12,7 @@ import ExperienceImg from "./ExperienceImg";
 // 	title: "Experience",
 // 	subtitle: "Work, Internship and Volunteership",
 // 	description:
-// 		"I have worked with many evolving startups as ML and DL Developer, Designer and Software Architect. I have also worked with some well established companies mostly as AI Developer. I love organising events and that is why I am also involved with many opensource communities as a representative.",
+// 		"I am an experienced Full-Stack Developer with a strong background in Python, Java, JavaScript, React, and Angular, skilled in building both client and server software. My career includes impactful roles at Stem Sims and HCL Technologies, where I led key projects and significantly enhanced user experiences through innovative solutions. As an educator at AlmaBetter and Udemy, I have contributed substantially to student learning and development. My expertise extends to cloud services, data analysis, and Agile methodologies, reflecting my comprehensive skill set in modern IT practices.",
 // 	header_image_path: "experience.svg",
 // 	sections: [
 // 		{
