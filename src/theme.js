@@ -259,4 +259,4 @@ export const modernTechTheme = {
   accent2: "#9C27B0", // Deep purple for creative accents, adds a touch of sophistication
 };
 
-export const chosenTheme = professionalDarkTheme;
+export const chosenTheme = materialDarkTheme;
