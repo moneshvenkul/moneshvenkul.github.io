@@ -259,4 +259,22 @@ export const modernTechTheme = {
   accent2: "#9C27B0", // Deep purple for creative accents, adds a touch of sophistication
 };
 
-export const chosenTheme = materialDarkTheme;
+export const appleGoogleInspiredTheme = {
+  body: "#FFFFFF", // Pure white for a clean, expansive background, similar to Apple's use of white space
+  text: "#202124", // A near-black shade for text, similar to Google's primary text color, ensuring great readability
+  expTxtColor: "#5F6368", // Medium-dark grey for less prominent text, providing a subtle contrast
+  highlight: "#FFFFFF", // A bright blue for highlights and links, reminiscent of Google's accent color
+  dark: "#333333", // A deep grey for darker elements or modes, offering a sleek, modern look
+  secondaryText: "#70757A", // Lighter grey for secondary text, soft and non-intrusive
+  imageHighlight: "#F5F5F5", // Very light grey for image backgrounds or borders, maintaining the clean, airy feel
+  compImgHighlight: "#4285F4", // A slightly different shade of blue, vibrant and eye-catching for image accents
+  jacketColor: "#A4C639", // Apple’s iconic green for interactive elements, fresh and lively
+  headerColor: "#FFFFFF", // A dark grey, almost black, for headers, creating a bold, strong presence
+  splashBg: "#E8EAED", // A light grey for splash screens or background areas, subtle and elegant
+
+  // Additional Accent Colors
+  accent1: "#FBBC05", // A bright yellow for special highlights or buttons, inspired by Google's secondary accent color
+  accent2: "#34A853", // A vivid green, another Google-inspired color, for calls-to-action or progress indicators
+};
+
+export const chosenTheme = appleGoogleInspiredTheme;
