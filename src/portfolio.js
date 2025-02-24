@@ -514,14 +514,25 @@ const experience = {
       work: true,
       experiences: [
         {
-          title: "Full Stack Engineer",
-          company: "Stem Sims",
-          company_url: "https://www.stemsims.com/",
-          logo_path: "stemsims_logo.png",
-          duration: "April 2022 - September 2023",
-          location: "Florida, United States",
+          title: "Senior Full Stack Developer",
+          company: "Capital One",
+          company_url: "https://www.capitalone.com/",
+          logo_path: "Capital_One-Logo.png",
+          duration: "June 2024 – Present",
+          location: "Richmond, VA, United States",
           description:
-            "At Stem Sims, as a Full-stack Software Intern, I played a pivotal role in enhancing user experience by implementing over 15 feature enhancements in just 3 months, utilizing my skills in Python and React.js for intuitive UI development and integrating RESTful APIs for improved back-end functionality. My daily engagement with the development team through Git and GitHub facilitated the successful introduction and merging of over 20 Pull Requests, while actively participating in over 12 Agile sprints using JIRA, which greatly aided in project management and direction. This period was marked by significant professional growth, as I honed my proficiency in tools like Visual Studio Code and Docker, leading to a 30% increase in development efficiency and a 25% enhancement in team collaboration, further augmented by invaluable insights from over 50 peer review sessions that substantially improved code quality and technical expertise.",
+            "Developed front-end applications using Vue.js, Typescript, and RxJS. Implemented Node.js server-side validations and database management across PostgreSQL, Oracle, MongoDB, Cassandra, and DynamoDB. Enhanced legacy applications and improved performance through modular architecture. Ensured high code quality with Jasmine and Karma testing frameworks, utilized Agile methodologies with JIRA, and maintained effective version control using Git, GitHub, and SourceTree.",
+          color: "#ff0000",
+        },
+        {
+          title: "Senior Full Stack Developer",
+          company: "Cognixia",
+          company_url: "https://www.cognixia.com/",
+          logo_path: "cognixia.png",
+          duration: "March 2024 – Present",
+          location: "Basking Ridge, NJ, United States",
+          description:
+            "Built and upgraded single-page applications using Angular (versions 2-11) and Vue.js. Developed backend solutions with Python/Django and Node.js, incorporating PostgreSQL, Oracle, MongoDB, Cassandra, and DynamoDB. Created intuitive data visualizations with High Charts, implemented robust UI/UX designs with Angular, React, HTML, CSS, SCSS, and maintained rigorous testing standards with Karma, Jasmine, and Enzyme. Facilitated Agile-Scrum practices for effective project delivery.",
           color: "#ff0000",
         },
         {
