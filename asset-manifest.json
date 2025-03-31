@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "./static/css/main.9b31310a.chunk.css",
-    "main.js": "./static/js/main.d61ca881.chunk.js",
-    "main.js.map": "./static/js/main.d61ca881.chunk.js.map",
+    "main.css": "./static/css/main.328abe4a.chunk.css",
+    "main.js": "./static/js/main.13aedb46.chunk.js",
+    "main.js.map": "./static/js/main.13aedb46.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.010d0e8e.js",
     "runtime-main.js.map": "./static/js/runtime-main.010d0e8e.js.map",
-    "static/js/2.d9e64e93.chunk.js": "./static/js/2.d9e64e93.chunk.js",
-    "static/js/2.d9e64e93.chunk.js.map": "./static/js/2.d9e64e93.chunk.js.map",
+    "static/js/2.4b887131.chunk.js": "./static/js/2.4b887131.chunk.js",
+    "static/js/2.4b887131.chunk.js.map": "./static/js/2.4b887131.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.c045b0d9a23564d8928dc27893a76514.js": "./precache-manifest.c045b0d9a23564d8928dc27893a76514.js",
+    "precache-manifest.3884f016f0d56b4e318540fabee20cc6.js": "./precache-manifest.3884f016f0d56b4e318540fabee20cc6.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.9b31310a.chunk.css.map": "./static/css/main.9b31310a.chunk.css.map",
+    "static/css/main.328abe4a.chunk.css.map": "./static/css/main.328abe4a.chunk.css.map",
     "static/media/index.css": "./static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/AlmaBetter_Logo.jpg": "./static/media/AlmaBetter_Logo.c24f4be5.jpg",
+    "static/media/Capital_One-Logo.png": "./static/media/Capital_One-Logo.0a71b796.png",
     "static/media/MyPic.jpg": "./static/media/MyPic.2ee2945d.jpg",
     "static/media/MyPic.png": "./static/media/MyPic.8dcf7d8f.png",
     "static/media/MyPic.jpeg": "./static/media/MyPic.ceaa8bf7.jpeg",
@@ -21,6 +22,7 @@
     "static/media/blogs_image.svg": "./static/media/blogs_image.058eca4c.svg",
     "static/media/cloud_infrastructure.svg": "./static/media/cloud_infrastructure.cacbc42b.svg",
     "static/media/codeInLogo.png": "./static/media/codeInLogo.fee92c18.png",
+    "static/media/cognixia.png": "./static/media/cognixia.cc62f616.png",
     "static/media/cognizant.jfif": "./static/media/cognizant.61ec52dc.jfif",
     "static/media/college_logo.png": "./static/media/college_logo.3510799b.png",
     "static/media/contactMail.png": "./static/media/contactMail.5f915405.png",
@@ -73,8 +75,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.010d0e8e.js",
-    "static/js/2.d9e64e93.chunk.js",
-    "static/css/main.9b31310a.chunk.css",
-    "static/js/main.d61ca881.chunk.js"
+    "static/js/2.4b887131.chunk.js",
+    "static/css/main.328abe4a.chunk.css",
+    "static/js/main.13aedb46.chunk.js"
   ]
 }

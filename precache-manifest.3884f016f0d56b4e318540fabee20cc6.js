@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "152a0689d184fa4709f12dc321f93883",
+    "revision": "d111059b58de64443b4262e7ecbc8e04",
     "url": "./index.html"
   },
   {
-    "revision": "12d2931cd997bfccedd7",
-    "url": "./static/css/main.9b31310a.chunk.css"
+    "revision": "ae0e4f3716769e66b4c6",
+    "url": "./static/css/main.328abe4a.chunk.css"
   },
   {
-    "revision": "202eef21df4e3ee2f16b",
-    "url": "./static/js/2.d9e64e93.chunk.js"
+    "revision": "9160e3eef4d5337b53b3",
+    "url": "./static/js/2.4b887131.chunk.js"
   },
   {
-    "revision": "12d2931cd997bfccedd7",
-    "url": "./static/js/main.d61ca881.chunk.js"
+    "revision": "ae0e4f3716769e66b4c6",
+    "url": "./static/js/main.13aedb46.chunk.js"
   },
   {
     "revision": "cc6a6fc7c9c166e96e3e",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c24f4be508c5ebbbdac44f41682662a9",
     "url": "./static/media/AlmaBetter_Logo.c24f4be5.jpg"
+  },
+  {
+    "revision": "0a71b7966354904d823ed11cf6a15aab",
+    "url": "./static/media/Capital_One-Logo.0a71b796.png"
   },
   {
     "revision": "4457817ac2b9993c65e81aa05828fe9c",
@@ -86,6 +90,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fee92c18b1cfbd1faa704c51047f113d",
     "url": "./static/media/codeInLogo.fee92c18.png"
+  },
+  {
+    "revision": "cc62f616fbc7a7595d8e0ed0b2e8e5fe",
+    "url": "./static/media/cognixia.cc62f616.png"
   },
   {
     "revision": "61ec52dca2675b4977b2352246eb6eaa",
