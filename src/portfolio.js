@@ -2,15 +2,13 @@
 
 // Website related settings
 const settings = {
-  isSplash: true, // Change this to false if you don't want Splash screen.
+  isSplash: false, // Change this to false if you don't want Splash screen.
 };
 
 //SEO Related settings
 const seo = {
   title: "Monesh Venkul's Portfolio",
-  description: `Experienced Full-Stack Developer with 6 years in IT, skilled in Python, Java, JavaScript, React, Node.js, Angular, SQL,
-NoSQL, Docker, Azure and AWS. Expert in developing both client and server software. Proven track record in diverse web
-projects. Strong problem-solving skills, adaptable, and committed to delivering high-quality results.`,
+  description: `Senior Full-Stack Developer specializing in React, Angular, Node.js, Java, Python, and cloud engineering across AWS and Azure. I build high-performance, secure, and scalable digital products for enterprise and consumer platforms.`,
   og: {
     title: "Monesh Venkul Vommi Portfolio",
     type: "website",
@@ -23,9 +21,7 @@ const greeting = {
   title: "Monesh Venkul Vommi",
   logo_name: "MoneshVenkulVommi",
   nickname: "monesh_venkul",
-  subTitle: `Experienced Full-Stack Developer with 6 years in IT, skilled in Python, Java, JavaScript, React, Node.js, Angular, SQL,
-NoSQL, Docker, Azure and AWS. Expert in developing both client and server software. Proven track record in diverse web
-projects. Strong problem-solving skills, adaptable, and committed to delivering high-quality results.`,
+  subTitle: `Senior Full-Stack Developer with 6+ years of experience building enterprise products in finance and technology. I design clean user experiences, build resilient backend services, and ship scalable cloud-native solutions using React, Angular, Vue, Node.js, Java, Python, AWS, and Azure.`,
   resumeLink:
     "https://unhnewhaven-my.sharepoint.com/:b:/g/personal/mvomm1_unh_newhaven_edu/EWst9Ou7KyFHvvSzI3P8X_gBMGvqK8BTM5RnZg1xDxKgHw?e=Dan4ZB",
   portfolio_repository:
@@ -89,9 +85,9 @@ const skills = {
       title: "Full Stack Development",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Building scalable and dynamic web applications using a range of technologies including Python, Java, JavaScript, React.js, and Angular.js, showcasing a strong proficiency in both front-end and back-end development.",
-        "⚡ Leading web development projects with a focus on efficient project management and team collaboration, utilizing Agile methodologies and DevOps practices (like Jenkins and Docker) to enhance development efficiency and accelerate time-to-market.",
-        "⚡ Imparting knowledge and skills as a Full Stack Software Dev Instructor, focusing on interactive and project-based learning in Python, Java, and JavaScript, thereby fostering student engagement and success in full-stack web development.",
+        "⚡ Architecting and delivering production-grade web applications using React, Angular, Vue, Node.js, Java, and Python across enterprise environments.",
+        "⚡ Building robust APIs, reusable UI systems, and performant data-driven workflows with strong attention to quality, accessibility, and maintainability.",
+        "⚡ Leading Agile teams, mentoring developers, and improving release velocity through CI/CD automation, test strategy, and engineering best practices.",
       ],
       softwareSkills: [
         {
@@ -171,9 +167,9 @@ const skills = {
       title: "Data Science & AI",
       fileName: "DataScienceImg",
       skills: [
-        "⚡ Analyzing and interpreting complex datasets using advanced data analytics, machine learning algorithms, and statistical methods to drive decision-making and enhance business strategies.",
-        "⚡ Designing and implementing AI-driven solutions, including the use of natural language processing (NLP) and machine learning algorithms, to develop intelligent and innovative applications such as AI-driven chatbots.",
-        "⚡ Educating and mentoring in the field of data science and AI, leveraging expertise in Python and machine learning to guide students and professionals, thereby contributing to the development of future talent in these cutting-edge technologies.",
+        "⚡ Translating business problems into data-backed solutions using SQL, Python analytics, and visualization tools.",
+        "⚡ Applying machine learning fundamentals and experimentation workflows to improve product decisions and operational outcomes.",
+        "⚡ Building dashboards and reporting pipelines that make complex metrics easy for stakeholders to understand and act on.",
       ],
       softwareSkills: [
         {
@@ -216,9 +212,9 @@ const skills = {
       title: "Cloud Infra-Architecture",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Architecting and deploying scalable cloud solutions using AWS and Azure, focusing on building robust infrastructures that ensure high availability and performance for diverse applications.",
-        "⚡ Implementing continuous integration and continuous deployment (CI/CD) pipelines using tools like Jenkins and Docker, enhancing software delivery processes and operational efficiency.",
-        "⚡ Leading the integration of cloud services into existing infrastructure, ensuring seamless migration and optimization of resources, while also prioritizing security and compliance standards.",
+        "⚡ Designing cloud-native architectures on AWS and Azure with a focus on reliability, security, and cost-aware scaling.",
+        "⚡ Implementing CI/CD pipelines, containerized services, and deployment automation to shorten release cycles and reduce risk.",
+        "⚡ Improving observability and operational excellence through better monitoring, incident response, and performance optimization.",
       ],
       softwareSkills: [
         {
@@ -283,9 +279,9 @@ const skills = {
       title: "UI/UX Design",
       fileName: "DesignImg",
       skills: [
-        "⚡ Designing intuitive and user-friendly interfaces for web and mobile applications, employing best practices in UI design and leveraging technologies like HTML, CSS, and JavaScript.",
-        "⚡ Conducting thorough user experience research and usability testing to create designs that effectively meet user needs and enhance user satisfaction.",
-        "⚡ Collaborating closely with development teams to ensure accurate implementation of UI/UX designs, and continuously iterating based on user feedback to improve the overall user experience.",
+        "⚡ Designing intuitive, modern interfaces that balance user needs with business goals and engineering constraints.",
+        "⚡ Crafting reusable design patterns and responsive layouts that improve usability across devices.",
+        "⚡ Partnering closely with product and engineering teams to convert design concepts into polished, accessible user experiences.",
       ],
       softwareSkills: [
         {
@@ -341,36 +337,12 @@ const competitiveSites = {
       profileLink: "https://www.hackerrank.com/monesh_venkul",
     },
     {
-      siteName: "Codechef",
-      iconifyClassname: "simple-icons:codechef",
-      style: {
-        color: "#5B4638",
-      },
-      profileLink: "https://www.codechef.com/users/ashutosh_1919",
-    },
-    {
       siteName: "Codeforces",
       iconifyClassname: "simple-icons:codeforces",
       style: {
         color: "#1F8ACB",
       },
       profileLink: "http://codeforces.com/profile/monesh_venkul",
-    },
-    {
-      siteName: "Hackerearth",
-      iconifyClassname: "simple-icons:hackerearth",
-      style: {
-        color: "#323754",
-      },
-      profileLink: "https://www.hackerearth.com/@ashutosh391",
-    },
-    {
-      siteName: "Kaggle",
-      iconifyClassname: "simple-icons:kaggle",
-      style: {
-        color: "#20BEFF",
-      },
-      profileLink: "https://www.kaggle.com/laymanbrother",
     },
   ],
 };
@@ -384,9 +356,9 @@ const degrees = {
       alt_name: "ZTM Academy",
       duration: "2022 - 2024",
       descriptions: [
-        "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
-        "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
-        "⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.",
+        "⚡ Focused on practical software engineering, web development, and system design through project-based learning.",
+        "⚡ Strengthened core foundations in data structures, algorithms, and production-grade application architecture.",
+        "⚡ Applied skills directly to real-world full-stack projects and engineering interviews.",
       ],
       website_link: "https://zerotomastery.io/",
     },
@@ -397,9 +369,9 @@ const degrees = {
       alt_name: "University of New Haven",
       duration: "2022 - 2023",
       descriptions: [
-        "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
-        "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
-        "⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.",
+        "⚡ Concentrated on analytics, data-driven decision making, predictive modeling, and business intelligence.",
+        "⚡ Built projects spanning SQL analytics, visualization, machine learning, and cloud-enabled pipelines.",
+        "⚡ Combined technical implementation with business context to deliver practical outcomes.",
       ],
       website_link: "https://www.newhaven.edu/",
     },
@@ -410,9 +382,9 @@ const degrees = {
       alt_name: "Sathyabama University",
       duration: "2016 - 2020",
       descriptions: [
-        "⚡ I have taken varity of courses related to Artificial Intelligence which correspond to Explainable AI, Graph Machine Learning, Computer Vision etc.",
-        "⚡ Apart from this, I have also done research assistantship. As part of it, I have worked on creating new algorithms in Graph ML and Network Science.",
-        "⚡ During my time at university, I was also associated with multimedia department. As part of it, I have worked on some documentry films and interviews.",
+        "⚡ Built strong foundations in computer science, software engineering, and full-stack application development.",
+        "⚡ Worked on collaborative projects using Java, web technologies, and database systems.",
+        "⚡ Developed communication and leadership skills through technical events and team initiatives.",
       ],
       website_link: "https://www.sathyabama.ac.in/",
     },
@@ -504,9 +476,9 @@ const certifications = {
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Work, Internship and Volunteership",
+  subtitle: "Work Experience, Internships, and Leadership",
   description:
-    "I am an experienced Full-Stack Developer with a strong background in Python, Java, JavaScript, React, and Angular, skilled in building both client and server software. My career includes impactful roles at Stem Sims and HCL Technologies, where I led key projects and significantly enhanced user experiences through innovative solutions. As an educator at AlmaBetter and Udemy, I have contributed substantially to student learning and development. My expertise extends to cloud services, data analysis, and Agile methodologies, reflecting my comprehensive skill set in modern IT practices.",
+    "I am a senior full-stack developer with 6+ years of experience delivering high-impact digital products in finance, consulting, and education. I specialize in modern frontend systems, backend APIs, cloud engineering, and team mentorship to ship reliable software at scale.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -521,7 +493,18 @@ const experience = {
           duration: "June 2024 – Present",
           location: "Richmond, VA, United States",
           description:
-            "Developed front-end applications using Vue.js, Typescript, and RxJS. Implemented Node.js server-side validations and database management across PostgreSQL, Oracle, MongoDB, Cassandra, and DynamoDB. Enhanced legacy applications and improved performance through modular architecture. Ensured high code quality with Jasmine and Karma testing frameworks, utilized Agile methodologies with JIRA, and maintained effective version control using Git, GitHub, and SourceTree.",
+            "Building and modernizing customer-facing web applications using Vue.js, TypeScript, and RxJS in an enterprise banking environment. Delivering Node.js service enhancements, strong validation patterns, and resilient data integrations across PostgreSQL, Oracle, MongoDB, Cassandra, and DynamoDB. Driving code quality with automated test coverage (Jasmine/Karma), Agile delivery in Jira, and collaborative Git workflows.",
+          color: "#ff0000",
+        },
+        {
+          title: "Senior Full Stack Developer",
+          company: "Fidelity Investments",
+          company_url: "https://www.fidelity.com/",
+          logo_path: "unh_logo.png",
+          duration: "August 2022 – May 2024",
+          location: "Merrimack, NH, United States",
+          description:
+            "Delivered secure, customer-facing financial platform capabilities using Angular/React frontends and Node.js/Java backend services. Built API integrations, improved transaction workflows, optimized application performance, and partnered with product, QA, and DevOps teams for reliable production releases.",
           color: "#ff0000",
         },
         {
@@ -532,18 +515,18 @@ const experience = {
           duration: "March 2024 – Present",
           location: "Basking Ridge, NJ, United States",
           description:
-            "Built and upgraded single-page applications using Angular (versions 2-11) and Vue.js. Developed backend solutions with Python/Django and Node.js, incorporating PostgreSQL, Oracle, MongoDB, Cassandra, and DynamoDB. Created intuitive data visualizations with High Charts, implemented robust UI/UX designs with Angular, React, HTML, CSS, SCSS, and maintained rigorous testing standards with Karma, Jasmine, and Enzyme. Facilitated Agile-Scrum practices for effective project delivery.",
+            "Delivered full-stack consulting solutions for enterprise clients using Angular, Vue.js, Node.js, and Python/Django. Implemented scalable APIs and dashboard experiences backed by PostgreSQL, Oracle, MongoDB, Cassandra, and DynamoDB. Collaborated with cross-functional teams to ship accessible UI/UX improvements, data visualizations, and tested releases under Agile-Scrum practices.",
           color: "#ff0000",
         },
         {
-          title: "Provost Scholarship",
+          title: "Graduate Assistant & Provost Scholarship Recipient",
           company: "University of New Haven",
           company_url: "https://www.newhaven.edu/",
           logo_path: "unh_logo.png",
           duration: "August 2022 - December 2023",
           location: "West Haven, Connecticut, United States",
           description:
-            "In my strategic leadership role at the University of New Haven, I successfully utilized data-driven decision-making to spearhead the development and launch of three innovative academic programs. By applying thorough market analysis and enrollment forecasting, I achieved a notable 15% increase in student enrollment in the subsequent year. Additionally, I orchestrated six annual professional development workshops focused on advanced teaching methodologies and data literacy for faculty and staff. This initiative significantly enhanced academic productivity and led to a 20% increase in research publications, as quantified by analytical tracking tools. My commitment to continuous improvement was further demonstrated through comprehensive quarterly performance reviews and feedback sessions. By employing statistical analysis and performance metrics, I effectively elevated academic operations and maintained a 95% positive feedback rate from both students and faculty, as evidenced by satisfaction surveys and data analytics.",
+            "Supported analytics-led academic initiatives at the University of New Haven while completing my M.S. in Business Analytics. Built reporting models and data-backed insights for program planning, contributed to workshops on data literacy, and helped improve academic decision-making through measurable performance tracking.",
           color: "#ff0000",
         },
         {
@@ -554,7 +537,7 @@ const experience = {
           duration: "May 2022 - December 2023",
           location: "Bengaluru, Karnataka",
           description:
-            "As a Full Stack Software Dev Instructor at AlmaBetter, I played a pivotal role in guiding over 300 students across more than 15 batches, achieving an 85% job placement rate within six months, with 60% of these students securing positions at top-tier tech firms. My extensive experience in full-stack web development, encompassing technologies such as Python, Java, JavaScript, React, Angular, Node.js, Express JS, and SQL, was fundamental in designing and delivering over 500 hours of dynamic, project-based instruction annually. This effort was reflected in a consistently high student feedback score of 4.8/5. Additionally, I significantly enhanced student engagement by over 80%, as evidenced by a 90% success rate in students achieving their career goals. I also facilitated networking opportunities for 70% of the students, helping them forge valuable connections within the tech industry and furthering their career advancement.",
+            "Mentored 300+ learners across multiple cohorts in full-stack development (JavaScript, React, Angular, Node.js, Python, Java, and SQL). Designed project-based curriculum, conducted code reviews, and supported interview readiness. Consistently received strong learner feedback for clear explanations, practical assignments, and career-focused mentorship.",
           color: "#0879bf",
         },
         {
@@ -564,7 +547,7 @@ const experience = {
           logo_path: "hcl.png",
           duration: "August 2020 - August 2022",
           location: "Bengaluru, Karnataka",
-          description: `At HCL Technologies, I excelled as a Software Engineer, architecting and developing over 10 intricate front-end and back-end applications annually for the banking sector. My work, deeply rooted in leveraging Spring Boot, Core Java, and microservices architecture, involved implementing RESTful APIs and integrating SQL and NoSQL databases, significantly enhancing application efficiency and scalability. I also spearheaded the quarterly deployment of five major applications, utilizing Azure DevOps and Microsoft Azure for CI/CD pipelines, which notably increased client satisfaction by 20%. My efforts and dedication were recognized with two prestigious company-wide awards for outstanding software engineering, underscoring my proficiency in coding standards, design patterns, and software optimization, and contributing significantly to the team's success and project deliverables.`,
+          description: `Engineered and deployed enterprise applications for banking clients using Java, Spring Boot, microservices, REST APIs, and SQL/NoSQL data stores. Contributed to scalable architecture decisions, CI/CD delivery through Azure DevOps, and production reliability improvements. Recognized for consistent execution quality and impactful delivery across multiple releases.`,
           color: "#0879bf",
         },
       ],
@@ -579,7 +562,7 @@ const experience = {
           logo_path: "udemy.png",
           duration: "December 2018 - July 2020",
           location: "Vizag, AndhraPradesh",
-          description: `At Udemy, I made a significant educational impact by delivering a series of comprehensive, technology-focused courses, reaching over 40,000 students globally. My courses covered essential areas such as programming languages (Python, Java, JavaScript), web development frameworks, and software engineering principles, equipping students with vital skills for industry success. In pursuit of professional growth, I continuously refined my teaching methodologies, focusing on interactive learning and practical applications, which was reflected in an impressive average course rating of 4.7/5. This rating underscored my ability to effectively communicate complex technical concepts to a diverse, international student base. Aligned with Udemy's mission, I played a crucial role in increasing course accessibility and digital learning engagement by 15% year-over-year. My commitment extended to setting ambitious goals to empower an additional 20,000 students with advanced technical skills in the upcoming year, leveraging analytics and feedback to adapt course content for maximum impact and relevance.`,
+          description: `Created and published technical courses on programming and web development for a global audience. Taught Python, Java, JavaScript, and full-stack development fundamentals with a hands-on learning style. Built a growing learner community through practical projects and clear concept breakdowns.`,
           color: "#9b1578",
         },
         {
@@ -591,7 +574,7 @@ const experience = {
           duration: "December 2018 - March 2019",
           location: "Chennai, TamilNadu",
           description:
-            "My Internship role is to create a Web-based Product. Built a standalone Web Product through leading a team. We had many difficulties at first but we made a software development approach to identify the problems and solved the errors in the product. We also improved the efficiency of the website by overall 25% through Web-Optimization. This was an amazing opportunity to prove myself as a web developer. This internship has really boosted my skills. It had been great working with Service4Startup. They are very cooperative, encouraging and patient towards my work and myself. I heartily wish the company to grow towards higher standards in their domain. And Thank you so much for letting me be a part of your long Journey.",
+            "Built a web-based product during internship by collaborating across product and engineering needs. Helped improve site performance and frontend usability, strengthened debugging practices, and delivered production-ready UI features as part of a small agile team.",
           color: "#fc1f20",
         },
         {
@@ -603,7 +586,7 @@ const experience = {
           duration: "December 2018 - August 2020",
           location: "Chennai, TamilNadu & Vizag, AndhraPradesh",
           description:
-            "Self - Employed with no income but passion. Slowly growing with growing community. Will create better tutorials in future.",
+            "Built and managed technical tutorial content for an online audience, focusing on developer education and practical software topics.",
           color: "orange",
         },
         {
@@ -614,7 +597,7 @@ const experience = {
           duration: "June 2018 - July 2018",
           location: "Chennai, TamilNadu",
           description:
-            "Specialized in the skill of Social Marketing | Increased the Communities Interaction from users by 25% | Managed to Complete the work in due-date | Developed time management skills.",
+            "Improved social engagement and digital outreach through campaign planning, content execution, and consistent community management.",
           color: "blue",
         },
         {
@@ -625,7 +608,7 @@ const experience = {
           duration: "April 2018 - May 2018",
           location: "Chennai, TamilNadu",
           description:
-            "Professional work | Real time Exposure to Industry | Made Presentations and developed the skill of Professional level Resource Management.",
+            "Supported ERP-related development tasks and presentations, gaining early exposure to structured enterprise workflows and stakeholder communication.",
           color: "black",
         },
         {
@@ -636,7 +619,7 @@ const experience = {
           duration: "December 2017 — January 2018",
           location: "Chennai, TamilNadu",
           description:
-            "Got the award of Best App Developer and Won the Hackathon competition through leading a team.",
+            "Led a small team to build a hackathon app prototype and received recognition for implementation quality and delivery.",
           color: "pink",
         },
         {
@@ -647,7 +630,7 @@ const experience = {
           duration: "July 2017 — September 2017",
           location: "Chennai, TamilNadu",
           description:
-            "Designed Front End of the website and Improved user Interface of the website without a team",
+            "Designed and implemented frontend UI improvements for better usability and user experience.",
           color: "green",
         },
       ],
@@ -663,7 +646,7 @@ const experience = {
           duration: "January 2019 – February 2019",
           location: "Chennai, TamilNadu",
           description:
-            "Had been a Great experience volunteering in this event Village Ticket,it is a event to showcase village traditions and its natural aspects. Raised the funds and been a Active member throughout the event.",
+            "Contributed as a student volunteer for a university community event, supporting planning, coordination, and on-ground execution.",
           color: "#4285F4",
         },
         {
@@ -674,7 +657,7 @@ const experience = {
           duration: "July 2017 — September 2017",
           location: "Chennai, TamilNadu",
           description:
-            "Designed Front End of the website and Improved user Interface of the website without a team",
+            "Designed and implemented frontend UI improvements for better usability and user experience.",
           color: "green",
         },
         {
@@ -685,7 +668,7 @@ const experience = {
           duration: "Aug 2019 - May 2020",
           location: "Hyderabad, Telangana",
           description:
-            "Microsoft Student Partner is a program for university students to lead the awareness and use of Cloud especially Azure tools in the development of their projects and startups. Under this program, I have organised hands on workshops and seminars to teach Cloud Computing concepts to students.",
+            "Led student outreach activities and cloud-awareness sessions, helping peers adopt Azure tools and modern development practices.",
           color: "#D83B01",
         },
       ],
@@ -697,14 +680,14 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.",
+    "A curated collection of full-stack, cloud, and analytics projects that showcase end-to-end delivery—from architecture and development to deployment, performance tuning, and business impact.",
   avatar_image_path: "projects_image.svg",
 };
 
 const publicationsHeader = {
   title: "Publications",
   description:
-    "I have worked on and published a few research papers and publications of my own.",
+    "Research and technical writing focused on cloud security, system design, and applied software innovation.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -726,12 +709,12 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "MyPic.jpg",
     description:
-      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with Full Stack, ML, AI, React, Android, Cloud and Opensource Development.",
+      "I am open to senior software engineering opportunities, solution architecture roles, and high-impact collaborations in full-stack and cloud engineering.",
   },
   blogSection: {
     title: "Blogs",
     subtitle:
-      "For individual fundamental empowerment, I like to write powerful lessons that create impact on each of the reader individually to change the core of their character.",
+      "I regularly share technical insights, project learnings, and engineering best practices through LinkedIn posts and long-form content.",
     link:
       "https://www.linkedin.com/in/monesh-venkul-vommi-8a80b6174/recent-activity/all/",
     avatar_image_path: "blogs_image.svg",
@@ -748,7 +731,7 @@ const contactPageData = {
     location_map_link: "https://maps.app.goo.gl/ELNQUUj5o4UrPKab8",
   },
   phoneSection: {
-    title: "Home Phone",
+    title: "Phone",
     subtitle: "+1 (475)4411062",
   },
 };
