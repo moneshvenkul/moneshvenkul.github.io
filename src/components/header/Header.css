@@ -1,109 +1,158 @@
-/* header */
+/* ============================================================
+   Navigation Header — 2026 Glass Morphism Design
+   ============================================================ */
+
+.header-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(5, 9, 20, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+}
 
 .header {
-  display: block;
-  max-width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 90%;
+  padding: 0 10px;
+  margin: 0 auto;
+  height: 72px;
 }
 
 .header ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  overflow: hidden;
-  /* background-color: #fff; */
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
 }
-.grey-color {
-  color: #868e96;
+
+/* Logo */
+.header .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
+}
+
+.header .logo-name {
+  font-family: "Agustina Regular", sans-serif;
+  font-weight: bold;
+  padding: 0 6px;
+  background: linear-gradient(135deg, #00d4ff, #7b2fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header .logo-bracket {
+  color: rgba(0, 212, 255, 0.5);
+  font-family: "SF Mono", "Fira Code", monospace;
+  font-size: 0.9em;
+}
+
+/* Nav Links */
+.menu {
+  font-family: "Inter", "Google Sans Regular", sans-serif;
 }
 
 .header li a {
   display: block;
-  padding: 20px 20px;
-  /* color: black; */
+  padding: 8px 14px;
   text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  position: relative;
 }
 
-.header li a:hover,
-.header .menu-btn:hover {
-  /* background-color: #A6E1FA; */
+.header li a:hover {
+  background: rgba(0, 212, 255, 0.08);
+  color: #00d4ff !important;
 }
 
-.header .logo {
-  display: block;
-  float: left;
-  font-size: 1.5em;
-  text-decoration: none;
-  margin-top: 10px;
-  line-height: normal;
-}
-.header .logo-name {
-  font-family: "Agustina Regular";
-  font-weight: bold;
-  padding: 0 10px;
-  /* color: #55198b; */
+.header li a.active-nav-link {
+  color: #00d4ff !important;
+  background: rgba(0, 212, 255, 0.1);
 }
 
-/* menu */
-
-.menu {
-  font-family: "Google Sans Regular";
+/* Contact Me CTA */
+.header li:last-child a {
+  background: rgba(0, 212, 255, 0.1);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  color: #00d4ff !important;
+  border-radius: 8px;
 }
 
-.header .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
+.header li:last-child a:hover {
+  background: rgba(0, 212, 255, 0.18);
+  border-color: rgba(0, 212, 255, 0.4);
+  box-shadow: 0 0 16px rgba(0, 212, 255, 0.2);
 }
 
-/* menu icon */
-
+/* ── Hamburger Menu ── */
 .header .menu-icon {
   cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
+  display: none;
+  padding: 12px;
   position: relative;
   user-select: none;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.header .menu-icon:hover {
+  background: rgba(0, 212, 255, 0.08);
 }
 
 .header .menu-icon .navicon {
-  background: #333;
+  background: #00d4ff;
   display: block;
   height: 2px;
   position: relative;
   transition: background 0.2s ease-out;
-  width: 18px;
+  width: 20px;
+  border-radius: 2px;
 }
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #333;
+  background: #00d4ff;
   content: "";
   display: block;
   height: 100%;
   position: absolute;
-  transition: all 0.2s ease-out;
+  transition: all 0.25s ease-out;
   width: 100%;
+  border-radius: 2px;
 }
 
 .header .menu-icon .navicon:before {
-  top: 5px;
+  top: 6px;
 }
-
 .header .menu-icon .navicon:after {
-  top: -5px;
+  top: -6px;
 }
 
-/* menu btn */
-
+/* Menu checkbox (hidden) */
 .header .menu-btn {
   display: none;
 }
 
+/* Hamburger open state */
 .header .menu-btn:checked ~ .menu {
-  max-height: 370px;
+  max-height: 420px;
+  opacity: 1;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -112,37 +161,63 @@
 
 .header .menu-btn:checked ~ .menu-icon .navicon:before {
   transform: rotate(-45deg);
+  top: 0;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon:after {
   transform: rotate(45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
-/* 48em = 768px */
+/* Grey color utility */
+.grey-color {
+  color: #7a9cbf;
+}
 
-@media (min-width: 48em) {
-  .header li {
-    float: left;
-  }
+/* ── Responsive ── */
+@media (max-width: 768px) {
   .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 16px 10px;
   }
+
+  .header .menu {
+    flex-direction: column;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    gap: 0;
+    padding: 0;
+    margin-top: 0;
+    align-items: stretch;
+  }
+
+  .header li a {
+    padding: 12px 16px;
+    border-radius: 8px;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.06);
+  }
+
+  .header li:last-child a {
+    border-bottom: none;
+    margin: 8px 0 4px;
+    text-align: center;
+  }
+
+  .header .menu-icon {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 769px) {
   .header .menu {
     max-height: none;
+    opacity: 1;
   }
   .header .menu-icon {
     display: none;
-  }
-}
-@media (max-width: 960px) and (min-width: 768px) {
-  .header {
-    font-size: 12px;
   }
 }

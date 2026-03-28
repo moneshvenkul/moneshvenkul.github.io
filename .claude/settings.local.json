@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l /c/Workspace/moneshvenkul.github.io/src/**/*.js)",
+      "Bash(xargs wc:*)",
+      "Bash(npm run:*)",
+      "Bash(npm install:*)"
+    ]
+  }
+}

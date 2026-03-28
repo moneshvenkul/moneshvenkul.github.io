@@ -277,4 +277,18 @@ export const appleGoogleInspiredTheme = {
   accent2: "#34A853", // A vivid green, another Google-inspired color, for calls-to-action or progress indicators
 };
 
-export const chosenTheme = appleGoogleInspiredTheme;
+export const elitePortfolio2026Theme = {
+  body: "#050914",
+  text: "#e8f4fd",
+  expTxtColor: "#c8dff0",
+  highlight: "#00d4ff",
+  dark: "#0d1526",
+  secondaryText: "#7a9cbf",
+  imageHighlight: "rgba(0,212,255,0.08)",
+  compImgHighlight: "rgba(123,47,255,0.15)",
+  jacketColor: "#7b2fff",
+  headerColor: "rgba(5,9,20,0.85)",
+  splashBg: "#050914",
+};
+
+export const chosenTheme = elitePortfolio2026Theme;

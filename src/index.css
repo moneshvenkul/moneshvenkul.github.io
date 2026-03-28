@@ -1,3 +1,9 @@
+/* ============================================================
+   ELITE PORTFOLIO 2026 — Global Design System
+   Monesh Venkul Vommi
+   ============================================================ */
+
+/* ── Fonts ── */
 @font-face {
   font-family: "Agustina Regular";
   font-style: normal;
@@ -40,26 +46,269 @@
   src: local("Google Sans Regular"),
     url("./assests/fonts/GoogleSans-Regular.ttf") format("woff");
 }
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+
+/* ── CSS Design Tokens ── */
+:root {
+  --bg-primary: #050914;
+  --bg-surface: #0d1526;
+  --bg-surface-alt: #111d35;
+  --bg-glass: rgba(13, 21, 38, 0.8);
+  --bg-glass-light: rgba(255, 255, 255, 0.04);
+
+  --accent-cyan: #00d4ff;
+  --accent-purple: #7b2fff;
+  --accent-gradient: linear-gradient(135deg, #00d4ff 0%, #7b2fff 100%);
+
+  --text-primary: #e8f4fd;
+  --text-secondary: #7a9cbf;
+  --text-muted: #4a6a8a;
+
+  --border-glass: rgba(0, 212, 255, 0.12);
+  --border-subtle: rgba(255, 255, 255, 0.06);
+
+  --glow-cyan: 0 0 20px rgba(0, 212, 255, 0.35);
+  --glow-strong: 0 0 40px rgba(0, 212, 255, 0.5);
+
+  --font-sans: "Inter", "Google Sans Regular", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  --font-display: "Google Sans Bold", "Inter", sans-serif;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
+  --transition-slow: 0.4s ease;
 }
+
+/* ── Reset ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html,
 body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
+html {
+  font-size: 18px;
+}
+
 body {
   margin: 0;
-  font: 19px / 23px Montserrat, "Montserrat", sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* Media Query */
+
+/* Radial mesh background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+      ellipse at 15% 50%,
+      rgba(0, 212, 255, 0.06) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse at 85% 20%,
+      rgba(123, 47, 255, 0.06) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse at 55% 85%,
+      rgba(0, 212, 255, 0.04) 0%,
+      transparent 45%
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Grid overlay */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      rgba(0, 212, 255, 0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(0, 212, 255, 0.025) 1px, transparent 1px);
+  background-size: 64px 64px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Typography ── */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  line-height: 1.2;
+}
+
+a {
+  color: var(--accent-cyan);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: #44e0ff;
+}
+
+code {
+  font-family: "SF Mono", "Fira Code", "Roboto Mono", monospace;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent-purple);
+  border-radius: var(--radius-full);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-cyan);
+}
+
+/* ── Text Selection ── */
+::selection {
+  background: rgba(0, 212, 255, 0.22);
+  color: var(--text-primary);
+}
+
+/* ── Utility: gradient text ── */
+.gradient-text {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Utility: glass card ── */
+.glass-card {
+  background: var(--bg-glass);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* ── subTitle override ── */
+.subTitle {
+  color: var(--text-secondary) !important;
+  font-family: var(--font-sans) !important;
+}
+
+/* ── Global section container ── */
+.main {
+  width: 90%;
+  max-width: 1200px;
+  padding: 20px 10px;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+/* ── Animations ── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(0, 212, 255, 0.65);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes blink-cursor {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotate-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ── Responsive ── */
 @media (max-width: 1380px) {
-  html,
-  body {
+  html {
     font-size: 16px;
-    line-height: normal;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
   }
 }

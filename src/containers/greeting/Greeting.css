@@ -1,95 +1,317 @@
+/* ============================================================
+   Hero / Greeting Section — 2026 Elite Design
+   ============================================================ */
+
 .main {
   width: 90%;
+  max-width: 1200px;
   padding: 20px 10px;
-  margin: 0px auto;
+  margin: 0 auto;
   margin-top: 4rem;
 }
+
 .greet-main {
   width: 90%;
+  max-width: 1200px;
   padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 2rem;
+  margin: 0 auto;
+  margin-top: 0;
 }
 
 .gretting-main {
   width: 90%;
   padding: 20px 10px;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .greeting-main {
   display: flex;
+  align-items: center;
+  gap: 3rem;
+  min-height: calc(100vh - 90px);
+  padding: 3rem 0;
 }
 
 .greeting-main > * {
   flex: 1;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
+
+/* ── Text Side ── */
+.greeting-text-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Availability badge */
+.greeting-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 255, 136, 0.08);
+  border: 1px solid rgba(0, 255, 136, 0.25);
+  border-radius: 999px;
+  padding: 6px 16px;
+  width: fit-content;
+  animation: fadeInUp 0.6s ease both;
+}
+
+.greeting-badge__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #00ff88;
+  box-shadow: 0 0 8px rgba(0, 255, 136, 0.6);
+  animation: pulse-green 2s ease-in-out infinite;
+}
+
+.greeting-badge__text {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #00ff88;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-family: "Inter", "Google Sans Regular", sans-serif;
+}
+
+@keyframes pulse-green {
+  0%,
+  100% {
+    box-shadow: 0 0 6px rgba(0, 255, 136, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 14px rgba(0, 255, 136, 0.9);
+  }
+}
+
+/* Name */
+.greeting-text {
+  margin: 0;
+  font-size: 4rem;
+  line-height: 1.05;
+  font-family: "Google Sans Bold", "Inter", sans-serif;
+  font-weight: 800;
+  background: linear-gradient(135deg, #e8f4fd 30%, #7a9cbf 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  animation: fadeInUp 0.7s ease 0.1s both;
+}
+
+/* Role typing line */
+.greeting-role {
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: "Google Sans Medium", "Inter", sans-serif;
+  color: #00d4ff;
+  animation: fadeInUp 0.7s ease 0.2s both;
+  min-height: 2rem;
+  line-height: 2rem;
+}
+
+.greeting-role__cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  background: #00d4ff;
+  margin-left: 3px;
+  vertical-align: middle;
+  animation: blink-cursor 1s step-end infinite;
+}
+
+/* Subtitle */
+.greeting-text-p {
+  font-size: 1rem !important;
+  line-height: 1.75 !important;
+  color: #7a9cbf !important;
+  font-family: "Inter", "Google Sans Regular", sans-serif !important;
+  max-width: 520px;
+  animation: fadeInUp 0.7s ease 0.3s both;
+  margin-right: 0 !important;
+}
+
+/* Stats row */
+.greeting-stats {
+  display: flex;
+  gap: 2.5rem;
+  animation: fadeInUp 0.7s ease 0.4s both;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(0, 212, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+}
+
+.greeting-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.greeting-stat__number {
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: "Google Sans Bold", sans-serif;
+  background: linear-gradient(135deg, #00d4ff, #7b2fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.1;
+}
+
+.greeting-stat__label {
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: #4a6a8a;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-family: "Inter", sans-serif;
+}
+
+/* Nickname - repurposed as a subtitle tag */
+.greeting-nickname {
+  font-size: 0.9rem;
+  font-family: "Inter", "Google Sans Regular", sans-serif;
+  font-weight: 500;
+  color: #4a6a8a;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Buttons */
 .button-greeting-div {
   display: flex;
-  margin-top: 20px;
+  gap: 1rem;
+  flex-wrap: wrap;
+  animation: fadeInUp 0.7s ease 0.5s both;
+  margin-top: 0;
 }
 
-.greeting-text {
-  margin-top: 80px;
-  font-size: 70px;
-  line-height: 1.1;
-  font-family: "Google Sans Bold";
+.portfolio-repo-btn-div {
+  animation: fadeInUp 0.7s ease 0.5s both;
 }
 
-.greeting-nickname {
-  font-size: 30px;
-  line-height: 0px;
-  font-family: "Google Sans Bold Italic";
-}
-
-.greeting-text-p {
-  font-size: 40px;
-  line-height: 40px;
-  margin-right: 40px;
-  font-family: "Google Sans Medium";
+/* ── Image Side ── */
+.greeting-image-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: fadeInUp 0.9s ease 0.2s both;
 }
 
 .greeting-image-div > * {
   max-width: 100%;
   height: auto;
+  filter: drop-shadow(0 0 40px rgba(0, 212, 255, 0.15));
+  animation: float 6s ease-in-out infinite;
 }
 
-/* Media Query */
+/* Glow orb behind SVG */
+.greeting-image-div::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 212, 255, 0.1) 0%,
+    rgba(123, 47, 255, 0.07) 50%,
+    transparent 70%
+  );
+  z-index: -1;
+}
+
+/* Tech pills floating */
+.greeting-skill-pill {
+  position: absolute;
+  background: rgba(10, 16, 35, 0.9);
+  border: 1px solid rgba(0, 212, 255, 0.22);
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #00d4ff;
+  font-family: "Inter", sans-serif;
+  backdrop-filter: blur(8px);
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.greeting-skill-pill:nth-child(1) {
+  top: 12%;
+  left: -5%;
+  animation: float 5s ease-in-out infinite;
+}
+
+.greeting-skill-pill:nth-child(2) {
+  top: 55%;
+  left: -12%;
+  animation: float 6.2s ease-in-out 0.8s infinite;
+}
+
+.greeting-skill-pill:nth-child(3) {
+  top: 20%;
+  right: 0%;
+  animation: float 5.5s ease-in-out 0.3s infinite;
+}
+
+.greeting-skill-pill:nth-child(4) {
+  top: 72%;
+  right: -5%;
+  animation: float 6s ease-in-out 1.2s infinite;
+}
+
+/* ── Media Queries ── */
 @media (max-width: 1380px) {
   .greeting-text {
-    font-size: 50px;
+    font-size: 3rem;
   }
-  .greeting-text-p {
-    font-size: 20px;
+  .greeting-role {
+    font-size: 1.1rem;
   }
 }
+
 @media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
+  .greeting-main {
+    flex-direction: column;
+    min-height: auto;
+    padding: 2rem 0 3rem;
+    text-align: center;
+    gap: 2rem;
   }
   .greeting-text {
-    font-size: 30px;
-    margin-top: 0px;
-    text-align: center;
+    font-size: 2.2rem;
   }
-  .greeting-nickname {
-    font-size: 25px;
-    text-align: center;
+  .greeting-role {
+    font-size: 0.95rem;
   }
   .greeting-text-p {
-    font-size: 16px;
-    margin-right: 0px;
-    line-height: normal;
+    max-width: 100% !important;
     text-align: center;
   }
-  .greeting-main {
-    display: block;
+  .greeting-badge {
+    align-self: center;
   }
-
-  .portfolio-repo-btn-div {
-    width: 100%;
-    display: flex;
+  .greeting-stats {
     justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .button-greeting-div,
+  .portfolio-repo-btn-div {
+    justify-content: center;
+  }
+  .greeting-image-div {
+    order: -1;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+  .greeting-image-div::before {
+    width: 200px;
+    height: 200px;
+  }
+  .greeting-skill-pill {
+    display: none;
   }
 }

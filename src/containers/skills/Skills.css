@@ -1,85 +1,139 @@
-.skills-main-div {
-  display: flex;
-  overflow: hidden;
+/* ============================================================
+   Skills Section — 2026 Elite Design
+   ============================================================ */
+
+.skills-header-div {
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .skills-header {
-  font-size: 60px;
-  line-height: normal;
-  font-family: "Google Sans Regular";
-  text-align: center;
+  font-size: 2.8rem;
+  line-height: 1.15;
+  font-family: "Google Sans Bold", "Inter", sans-serif;
+  font-weight: 800;
+  background: linear-gradient(135deg, #00d4ff 0%, #7b2fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
 }
 
-.skills-text {
-  font-size: 20px;
+.skills-header-sub {
+  font-size: 1rem;
+  color: #7a9cbf;
+  font-family: "Inter", "Google Sans Regular", sans-serif;
+  max-width: 520px;
+  margin: 0 auto;
 }
 
-.skills-text-div {
-  margin-left: 50px;
-  font-family: "Google Sans Regular";
+/* ── Skill category cards ── */
+.skills-main-div {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .skills-main-div > * {
-  flex: 1;
-  margin-bottom: 30px;
+  flex: none;
+  margin-bottom: 0;
+}
+
+/* Individual skill section (SkillSection renders these) */
+.skills-text-div {
+  background: rgba(13, 21, 38, 0.7);
+  border: 1px solid rgba(0, 212, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(12px);
+}
+
+.skills-text-div:hover {
+  border-color: rgba(0, 212, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 212, 255, 0.08);
+}
+
+.skills-heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: "Google Sans Bold", "Inter", sans-serif;
+  line-height: 1.3;
+  color: #e8f4fd;
+  margin-bottom: 1rem;
+}
+
+.skills-text {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #7a9cbf;
+  font-family: "Inter", "Google Sans Regular", sans-serif;
+}
+
+.skills-text-subtitle {
+  font-size: 0.85rem;
+  color: #7a9cbf;
+  font-family: "Inter", sans-serif;
+}
+
+/* Icon section */
+.skills-image-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills-image-div > * {
   max-width: 100%;
   height: auto;
-  margin-top: 100px;
+  margin-top: 0;
+  filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.1));
 }
 
-.skills-heading {
-  font-size: 56px;
-  font-weight: 400;
-  font-family: "Google Sans Regular";
-  line-height: normal;
+/* Software skill icons */
+.software-skills-main-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-/* Media Query */
+/* ── Responsive ── */
 @media (max-width: 1380px) {
-  .skills-heading {
-    font-size: 40px;
-  }
   .skills-header {
-    font-size: 50px;
+    font-size: 2.2rem;
   }
-  /* .skills-image-div > img {
-    margin-top: 0px;
-  } */
-}
-@media (max-width: 768px) {
   .skills-heading {
-    font-size: 30px;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-header {
+    font-size: 1.8rem;
+  }
+  .skills-heading {
+    font-size: 1.2rem;
     text-align: center;
   }
-  .skills-header {
-    font-size: 30px;
+  .skills-text {
+    font-size: 0.85rem;
   }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
+  .skills-text-subtitle {
+    font-size: 0.85rem;
+    text-align: center;
   }
   .skills-main-div {
     flex-direction: column;
   }
   .skills-text-div {
-    margin-left: 0px;
-    margin: 20px;
-  }
-  .skills-text {
-    font-size: 16px;
-  }
-  .skills-text-subtitle {
-    font-size: 16px;
-    text-align: center;
+    margin-left: 0;
+    padding: 1.5rem;
   }
   .skills-image-div {
-    /* display: none; */
     order: 2;
   }
   .skills-image-div > * {
-    margin-top: 0px;
+    margin-top: 0;
   }
 }

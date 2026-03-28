@@ -1,16 +1,17 @@
-/* Change this file to get your personal Porfolio */
+/* Change this file to get your personal Portfolio */
 
 // Website related settings
 const settings = {
-  isSplash: false, // Change this to false if you don't want Splash screen.
+  isSplash: false,
 };
 
 //SEO Related settings
 const seo = {
-  title: "Monesh Venkul's Portfolio",
-  description: `Senior Full-Stack Developer specializing in React, Angular, Node.js, Java, Python, and cloud engineering across AWS and Azure. I build high-performance, secure, and scalable digital products for enterprise and consumer platforms.`,
+  title: "Monesh Venkul Vommi | Senior Software Engineer & AI Engineer",
+  description:
+    "Full-stack and AI engineer with 7+ years across fintech, enterprise consulting, and edtech. Built Fidelity's first production RAG pipeline adopted by 3 enterprise teams. AWS Solutions Architect Certified. Open to FAANG and top-tier roles.",
   og: {
-    title: "Monesh Venkul Vommi Portfolio",
+    title: "Monesh Venkul Vommi — Portfolio",
     type: "website",
     url: "https://moneshvenkul.github.io/",
   },
@@ -21,7 +22,8 @@ const greeting = {
   title: "Monesh Venkul Vommi",
   logo_name: "MoneshVenkulVommi",
   nickname: "monesh_venkul",
-  subTitle: `Senior Full-Stack Developer with 6+ years of experience building enterprise products in finance and technology. I design clean user experiences, build resilient backend services, and ship scalable cloud-native solutions using React, Angular, Vue, Node.js, Java, Python, AWS, and Azure.`,
+  subTitle:
+    "Full-stack & AI engineer with 7+ years across fintech, enterprise, and edtech. Built Fidelity's first production RAG pipeline — adopted by 3 enterprise teams in 4 weeks. AWS Solutions Architect Certified. I work best where AI meets distributed systems and there's a real latency or scale problem to solve.",
   resumeLink:
     "https://unhnewhaven-my.sharepoint.com/:b:/g/personal/mvomm1_unh_newhaven_edu/EWst9Ou7KyFHvvSzI3P8X_gBMGvqK8BTM5RnZg1xDxKgHw?e=Dan4ZB",
   portfolio_repository:
@@ -30,287 +32,210 @@ const greeting = {
 };
 
 const socialMediaLinks = [
-  /* Your Social Media Link */
-  // github: "https://github.com/moneshvenkul",
-  // linkedin: "https://www.linkedin.com/in/monesh-venkul-vommi-8a80b6174/",
-  // gmail: "mvvenkul@gmail.com",
-
   {
     name: "Github",
     link: "https://github.com/moneshvenkul",
-    fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
-    backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
+    fontAwesomeIcon: "fa-github",
+    backgroundColor: "#181717",
   },
   {
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/monesh-venkul-vommi-8a80b6174/",
-    fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
-    backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
-  },
-  {
-    name: "YouTube",
-    link: "https://www.youtube.com/channel/UCRQ77SxTf4WRoJEO6YNPakA",
-    fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
-    backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
+    fontAwesomeIcon: "fa-linkedin-in",
+    backgroundColor: "#0077B5",
   },
   {
     name: "Gmail",
     link: "mailto:mvvenkul@gmail.com",
-    fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
-    backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
+    fontAwesomeIcon: "fa-google",
+    backgroundColor: "#D14836",
   },
-  // {
-  //   name: "X-Twitter",
-  //   link: "",
-  //   fontAwesomeIcon: "fa-x-twitter", // Reference https://fontawesome.com/icons/x-twitter?f=brands&s=solid
-  //   backgroundColor: "#000000", // Reference https://simpleicons.org/?q=x
-  // },
-  // {
-  //   name: "Facebook",
-  //   link: "",
-  //   fontAwesomeIcon: "fa-facebook-f", // Reference https://fontawesome.com/icons/facebook-f?style=brands
-  //   backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
-  // },
-  // {
-  //   name: "Instagram",
-  //   link: "",
-  //   fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
-  //   backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
-  // },
+  {
+    name: "YouTube",
+    link: "https://www.youtube.com/channel/UCRQ77SxTf4WRoJEO6YNPakA",
+    fontAwesomeIcon: "fa-youtube",
+    backgroundColor: "#FF0000",
+  },
 ];
 
 const skills = {
   data: [
     {
-      title: "Full Stack Development",
-      fileName: "FullStackImg",
-      skills: [
-        "⚡ Architecting and delivering production-grade web applications using React, Angular, Vue, Node.js, Java, and Python across enterprise environments.",
-        "⚡ Building robust APIs, reusable UI systems, and performant data-driven workflows with strong attention to quality, accessibility, and maintainability.",
-        "⚡ Leading Agile teams, mentoring developers, and improving release velocity through CI/CD automation, test strategy, and engineering best practices.",
-      ],
-      softwareSkills: [
-        {
-          skillName: "HTML5",
-          fontAwesomeClassname: "simple-icons:html5",
-          style: {
-            color: "#E34F26",
-          },
-        },
-        {
-          skillName: "CSS3",
-          fontAwesomeClassname: "fa-css3",
-          style: {
-            color: "#1572B6",
-          },
-        },
-        {
-          skillName: "Sass",
-          fontAwesomeClassname: "simple-icons:sass",
-          style: {
-            color: "#CC6699",
-          },
-        },
-        {
-          skillName: "JavaScript",
-          fontAwesomeClassname: "simple-icons:javascript",
-          style: {
-            backgroundColor: "#000000",
-            color: "#F7DF1E",
-          },
-        },
-        {
-          skillName: "ReactJS",
-          fontAwesomeClassname: "simple-icons:react",
-          style: {
-            color: "#61DAFB",
-          },
-        },
-        {
-          skillName: "NodeJS",
-          fontAwesomeClassname: "simple-icons:node-dot-js",
-          style: {
-            color: "#339933",
-          },
-        },
-        {
-          skillName: "NPM",
-          fontAwesomeClassname: "simple-icons:npm",
-          style: {
-            color: "#CB3837",
-          },
-        },
-        {
-          skillName: "Yarn",
-          fontAwesomeClassname: "simple-icons:yarn",
-          style: {
-            color: "#2C8EBB",
-          },
-        },
-        {
-          skillName: "Gatsby",
-          fontAwesomeClassname: "simple-icons:gatsby",
-          style: {
-            color: "#663399",
-          },
-        },
-        {
-          skillName: "Flutter",
-          fontAwesomeClassname: "simple-icons:flutter",
-          style: {
-            color: "#02569B",
-          },
-        },
-      ],
-    },
-    {
-      title: "Data Science & AI",
+      title: "AI & Machine Learning",
       fileName: "DataScienceImg",
       skills: [
-        "⚡ Translating business problems into data-backed solutions using SQL, Python analytics, and visualization tools.",
-        "⚡ Applying machine learning fundamentals and experimentation workflows to improve product decisions and operational outcomes.",
-        "⚡ Building dashboards and reporting pipelines that make complex metrics easy for stakeholders to understand and act on.",
+        "⚡ Built Fidelity's first production RAG pipeline (LangChain + Pinecone) enabling wealth managers to query thousands of financial documents in plain English — adopted by 3 enterprise teams in 4 weeks.",
+        "⚡ Designed and shipped AI-powered products including a meal planner with 40% reduction in irrelevant recommendations and a real-time sketch-to-image tool with sub-3s latency using Stable Diffusion.",
+        "⚡ Hands-on expertise with LLMs, prompt engineering, vector databases, and embedding pipelines for production AI systems.",
       ],
       softwareSkills: [
         {
-          skillName: "Tensorflow",
-          fontAwesomeClassname: "logos-tensorflow",
-          style: {
-            backgroundColor: "transparent",
-          },
+          skillName: "Python",
+          fontAwesomeClassname: "ion-logo-python",
+          style: { backgroundColor: "transparent", color: "#3776AB" },
         },
         {
-          skillName: "Keras",
-          fontAwesomeClassname: "simple-icons:keras",
-          style: {
-            backgroundColor: "white",
-            color: "#D00000",
-          },
+          skillName: "TensorFlow",
+          fontAwesomeClassname: "logos-tensorflow",
+          style: { backgroundColor: "transparent" },
         },
         {
           skillName: "PyTorch",
           fontAwesomeClassname: "logos-pytorch",
-          style: {
-            backgroundColor: "transparent",
-          },
+          style: { backgroundColor: "transparent" },
         },
         {
-          skillName: "Python",
-          fontAwesomeClassname: "ion-logo-python",
-          style: {
-            backgroundColor: "transparent",
-            color: "#3776AB",
-          },
+          skillName: "OpenAI",
+          fontAwesomeClassname: "simple-icons:openai",
+          style: { backgroundColor: "transparent", color: "#74AA9C" },
         },
         {
-          skillName: "Deeplearning",
-          imageSrc: "deeplearning_ai_logo.png",
+          skillName: "LangChain",
+          fontAwesomeClassname: "simple-icons:langchain",
+          style: { backgroundColor: "transparent", color: "#1C3C3C" },
         },
       ],
     },
     {
-      title: "Cloud Infra-Architecture",
-      fileName: "CloudInfraImg",
+      title: "Full Stack Development",
+      fileName: "FullStackImg",
       skills: [
-        "⚡ Designing cloud-native architectures on AWS and Azure with a focus on reliability, security, and cost-aware scaling.",
-        "⚡ Implementing CI/CD pipelines, containerized services, and deployment automation to shorten release cycles and reduce risk.",
-        "⚡ Improving observability and operational excellence through better monitoring, incident response, and performance optimization.",
+        "⚡ Engineered scalable RESTful APIs and Vue.js/React component architectures serving 1M+ monthly active users at Ascendion; reduced average page load time by 38%.",
+        "⚡ Migrated advisor portal from Create React App to Next.js 14 with SSR and Bun runtime, improving Time-to-Interactive by 32% at Fidelity.",
+        "⚡ Delivered and owned core banking microservices (Java/Spring Boot) for a top-5 Indian private bank, handling 500K+ daily transactions with 99.95% uptime SLA.",
       ],
       softwareSkills: [
         {
-          skillName: "GCP",
-          fontAwesomeClassname: "simple-icons:googlecloud",
-          style: {
-            color: "#4285F4",
-          },
+          skillName: "JavaScript",
+          fontAwesomeClassname: "simple-icons:javascript",
+          style: { backgroundColor: "#000000", color: "#F7DF1E" },
         },
+        {
+          skillName: "TypeScript",
+          fontAwesomeClassname: "simple-icons:typescript",
+          style: { backgroundColor: "transparent", color: "#3178C6" },
+        },
+        {
+          skillName: "ReactJS",
+          fontAwesomeClassname: "simple-icons:react",
+          style: { color: "#61DAFB" },
+        },
+        {
+          skillName: "Next.js",
+          fontAwesomeClassname: "simple-icons:next-dot-js",
+          style: { color: "#ffffff" },
+        },
+        {
+          skillName: "Vue.js",
+          fontAwesomeClassname: "simple-icons:vue-dot-js",
+          style: { color: "#41B883" },
+        },
+        {
+          skillName: "NodeJS",
+          fontAwesomeClassname: "simple-icons:node-dot-js",
+          style: { color: "#339933" },
+        },
+        {
+          skillName: "Java",
+          fontAwesomeClassname: "simple-icons:java",
+          style: { color: "#f89820" },
+        },
+        {
+          skillName: "Spring Boot",
+          fontAwesomeClassname: "simple-icons:spring",
+          style: { color: "#6DB33F" },
+        },
+        {
+          skillName: "GraphQL",
+          fontAwesomeClassname: "simple-icons:graphql",
+          style: { color: "#E10098" },
+        },
+      ],
+    },
+    {
+      title: "Cloud & DevOps",
+      fileName: "CloudInfraImg",
+      skills: [
+        "⚡ AWS Certified Solutions Architect — designing reliable, scalable cloud-native architectures with a focus on cost-efficiency and security.",
+        "⚡ Reduced CI/CD pipeline execution time by 45% by migrating enterprise test suites from Cypress to Playwright at Ascendion.",
+        "⚡ Containerized 8 legacy banking services with Docker and automated deployments via Jenkins CI/CD, achieving zero-downtime releases and reducing manual deployment effort by 70% at HCL.",
+      ],
+      softwareSkills: [
         {
           skillName: "AWS",
           fontAwesomeClassname: "simple-icons:amazonaws",
-          style: {
-            color: "#FF9900",
-          },
-        },
-        {
-          skillName: "Azure",
-          fontAwesomeClassname: "simple-icons:microsoftazure",
-          style: {
-            color: "#0089D6",
-          },
-        },
-        {
-          skillName: "Firebase",
-          fontAwesomeClassname: "simple-icons:firebase",
-          style: {
-            color: "#FFCA28",
-          },
-        },
-        {
-          skillName: "PostgreSQL",
-          fontAwesomeClassname: "simple-icons:postgresql",
-          style: {
-            color: "#336791",
-          },
-        },
-        {
-          skillName: "MongoDB",
-          fontAwesomeClassname: "simple-icons:mongodb",
-          style: {
-            color: "#47A248",
-          },
-        },
-        {
-          skillName: "Docker",
-          fontAwesomeClassname: "simple-icons:docker",
-          style: {
-            color: "#1488C6",
-          },
+          style: { color: "#FF9900" },
         },
         {
           skillName: "Kubernetes",
           fontAwesomeClassname: "simple-icons:kubernetes",
-          style: {
-            color: "#326CE5",
-          },
+          style: { color: "#326CE5" },
+        },
+        {
+          skillName: "Docker",
+          fontAwesomeClassname: "simple-icons:docker",
+          style: { color: "#1488C6" },
+        },
+        {
+          skillName: "Terraform",
+          fontAwesomeClassname: "simple-icons:terraform",
+          style: { color: "#7B42BC" },
+        },
+        {
+          skillName: "GitHub Actions",
+          fontAwesomeClassname: "simple-icons:githubactions",
+          style: { color: "#2088FF" },
+        },
+        {
+          skillName: "Jenkins",
+          fontAwesomeClassname: "simple-icons:jenkins",
+          style: { color: "#D24939" },
         },
       ],
     },
     {
-      title: "UI/UX Design",
+      title: "Databases & Testing",
       fileName: "DesignImg",
       skills: [
-        "⚡ Designing intuitive, modern interfaces that balance user needs with business goals and engineering constraints.",
-        "⚡ Crafting reusable design patterns and responsive layouts that improve usability across devices.",
-        "⚡ Partnering closely with product and engineering teams to convert design concepts into polished, accessible user experiences.",
+        "⚡ Cut complex financial relationship query latency by 58% by replacing relational SQL schemas with a Neo4j graph database, enabling multi-hop traversal across client portfolio networks.",
+        "⚡ Introduced Redis API response caching at Ascendion, reducing database read load by 30% during peak traffic windows.",
+        "⚡ Drove WCAG 2.1 AA accessibility compliance across 12 product screens, cutting screen-reader rendering latency by 22% and eliminating 40+ audit violations.",
       ],
       softwareSkills: [
         {
-          skillName: "Adobe XD",
-          fontAwesomeClassname: "simple-icons:adobexd",
-          style: {
-            color: "#FF2BC2",
-          },
+          skillName: "PostgreSQL",
+          fontAwesomeClassname: "simple-icons:postgresql",
+          style: { color: "#336791" },
         },
         {
-          skillName: "Figma",
-          fontAwesomeClassname: "simple-icons:figma",
-          style: {
-            color: "#F24E1E",
-          },
+          skillName: "Neo4j",
+          fontAwesomeClassname: "simple-icons:neo4j",
+          style: { color: "#008CC1" },
         },
         {
-          skillName: "Adobe Illustrator",
-          fontAwesomeClassname: "simple-icons:adobeillustrator",
-          style: {
-            color: "#FF7C00",
-          },
+          skillName: "Redis",
+          fontAwesomeClassname: "simple-icons:redis",
+          style: { color: "#DC382D" },
         },
         {
-          skillName: "Inkscape",
-          fontAwesomeClassname: "simple-icons:inkscape",
-          style: {
-            color: "#000000",
-          },
+          skillName: "MongoDB",
+          fontAwesomeClassname: "simple-icons:mongodb",
+          style: { color: "#47A248" },
+        },
+        {
+          skillName: "Playwright",
+          fontAwesomeClassname: "simple-icons:playwright",
+          style: { color: "#2EAD33" },
+        },
+        {
+          skillName: "Jest",
+          fontAwesomeClassname: "simple-icons:jest",
+          style: { color: "#C21325" },
+        },
+        {
+          skillName: "Cypress",
+          fontAwesomeClassname: "simple-icons:cypress",
+          style: { color: "#17202C" },
         },
       ],
     },
@@ -323,25 +248,19 @@ const competitiveSites = {
     {
       siteName: "LeetCode",
       iconifyClassname: "simple-icons:leetcode",
-      style: {
-        color: "#F79F1B",
-      },
+      style: { color: "#F79F1B" },
       profileLink: "https://leetcode.com/monesh_venkul/",
     },
     {
       siteName: "HackerRank",
       iconifyClassname: "simple-icons:hackerrank",
-      style: {
-        color: "#2EC866",
-      },
+      style: { color: "#2EC866" },
       profileLink: "https://www.hackerrank.com/monesh_venkul",
     },
     {
       siteName: "Codeforces",
       iconifyClassname: "simple-icons:codeforces",
-      style: {
-        color: "#1F8ACB",
-      },
+      style: { color: "#1F8ACB" },
       profileLink: "http://codeforces.com/profile/monesh_venkul",
     },
   ],
@@ -350,8 +269,34 @@ const competitiveSites = {
 const degrees = {
   degrees: [
     {
+      title: "University of New Haven",
+      subtitle: "M.S. in Business Analytics",
+      logo_path: "unh_logo.png",
+      alt_name: "University of New Haven",
+      duration: "2022 - 2023",
+      descriptions: [
+        "⚡ GPA 4.0/4.0 — Top of cohort. Concentrated on analytics, data-driven decision making, predictive modeling, and business intelligence.",
+        "⚡ Built projects spanning SQL analytics, visualization, machine learning, and cloud-enabled pipelines.",
+        "⚡ Recipient of Provost Scholarship — awarded for academic excellence.",
+      ],
+      website_link: "https://www.newhaven.edu/",
+    },
+    {
+      title: "Sathyabama University",
+      subtitle: "B.E. in Computer Science",
+      logo_path: "sist_logo.png",
+      alt_name: "Sathyabama University",
+      duration: "2016 - 2020",
+      descriptions: [
+        "⚡ GPA 9.2/10. Strong foundations in computer science, software engineering, and full-stack application development.",
+        "⚡ Worked on collaborative projects using Java, web technologies, and database systems.",
+        "⚡ Published research on Multi-layer Security in Cloud Storage Using Cryptography (Scopus indexed).",
+      ],
+      website_link: "https://www.sathyabama.ac.in/",
+    },
+    {
       title: "Zero to Mastery Academy",
-      subtitle: "Certification in Computer Science",
+      subtitle: "Advanced Software Engineering",
       logo_path: "ztm_logo.png",
       alt_name: "ZTM Academy",
       duration: "2022 - 2024",
@@ -362,113 +307,76 @@ const degrees = {
       ],
       website_link: "https://zerotomastery.io/",
     },
-    {
-      title: "University of New Haven",
-      subtitle: "M.S. in Business Analytics",
-      logo_path: "unh_logo.png",
-      alt_name: "University of New Haven",
-      duration: "2022 - 2023",
-      descriptions: [
-        "⚡ Concentrated on analytics, data-driven decision making, predictive modeling, and business intelligence.",
-        "⚡ Built projects spanning SQL analytics, visualization, machine learning, and cloud-enabled pipelines.",
-        "⚡ Combined technical implementation with business context to deliver practical outcomes.",
-      ],
-      website_link: "https://www.newhaven.edu/",
-    },
-    {
-      title: "Sathyabama University",
-      subtitle: "B.E in Computer Science",
-      logo_path: "sist_logo.png",
-      alt_name: "Sathyabama University",
-      duration: "2016 - 2020",
-      descriptions: [
-        "⚡ Built strong foundations in computer science, software engineering, and full-stack application development.",
-        "⚡ Worked on collaborative projects using Java, web technologies, and database systems.",
-        "⚡ Developed communication and leadership skills through technical events and team initiatives.",
-      ],
-      website_link: "https://www.sathyabama.ac.in/",
-    },
   ],
 };
 
 const certifications = {
   certifications: [
     {
-      title: "Introduction to Internet of Things",
-      subtitle: "IIT - NPTEL",
+      title: "AWS Certified Solutions Architect – Associate",
+      subtitle: "Amazon Web Services",
+      logo_path: "aws_logo.png",
+      certificate_link: "https://www.credly.com/badges/",
+      alt_name: "AWS",
+      color_code: "#FF990099",
+    },
+    {
+      title: "Microsoft GitHub Copilot Certified",
+      subtitle: "Microsoft",
+      logo_path: "microsoft_logo.png",
+      certificate_link: "https://learn.microsoft.com/",
+      alt_name: "Microsoft GitHub Copilot",
+      color_code: "#0078D499",
+    },
+    {
+      title: "JavaScript",
+      subtitle: "HackerRank",
+      logo_path: "hackerrank_logo.png",
+      certificate_link: "https://www.hackerrank.com/certificates/ac6ae2d31bb8",
+      alt_name: "Javascript HackerRank",
+      color_code: "#2EC86699",
+    },
+    {
+      title: "Problem Solving (Intermediate)",
+      subtitle: "HackerRank",
+      logo_path: "hackerrank_logo.png",
+      certificate_link: "https://www.hackerrank.com/certificates/186dc9c7e36a",
+      alt_name: "Problem Solving HackerRank",
+      color_code: "#2EC86699",
+    },
+    {
+      title: "React JS",
+      subtitle: "HackerRank",
+      logo_path: "hackerrank_logo.png",
+      certificate_link: "https://www.hackerrank.com/certificates/ef906dcaee86",
+      alt_name: "React JS HackerRank",
+      color_code: "#2EC86699",
+    },
+    {
+      title: "The Fundamentals of Digital Marketing",
+      subtitle: "Google",
+      logo_path: "google_logo.png",
+      certificate_link: "https://learndigital.withgoogle.com/link/1tb5mplmosg",
+      alt_name: "Google Certificate",
+      color_code: "#4285F499",
+    },
+    {
+      title: "Machine Learning 101",
+      subtitle: "GUVI",
+      logo_path: "guvi_logo.png",
+      certificate_link:
+        "https://www.guvi.in/verify-certificate?id=T3601z4g002mk2f15a",
+      alt_name: "ML GUVI",
+      color_code: "#FF6B3599",
+    },
+    {
+      title: "Introduction to IoT",
+      subtitle: "IIT – NPTEL",
       logo_path: "nptel_logo.png",
       certificate_link:
         "https://www.coursera.org/account/accomplishments/verify/22MTSSC5WDTM",
       alt_name: "NPTEL",
       color_code: "#FFBB0099",
-    },
-    {
-      title: "The Fundamentals of Digital Marketing",
-      subtitle: "- Google",
-      logo_path: "google_logo.png",
-      certificate_link: "https://learndigital.withgoogle.com/link/1tb5mplmosg",
-      alt_name: "Google Certificate",
-      color_code: "#0C9D5899",
-    },
-    {
-      title: "Machine Learning 101",
-      subtitle: "- GUVI",
-      logo_path: "guvi_logo.png",
-      certificate_link:
-        "https://www.guvi.in/verify-certificate?id=T3601z4g002mk2f15a",
-      alt_name: "Google",
-      color_code: "#ffff",
-    },
-    {
-      title: "JavaScript",
-      subtitle: "- Hackerrank",
-      logo_path: "hackerrank_logo.png",
-      certificate_link: "https://www.hackerrank.com/certificates/ac6ae2d31bb8",
-      alt_name: "Javascript Hackerrank",
-      color_code: "#1F70C199",
-    },
-    {
-      title: "Problem Solving (Intermediate)",
-      subtitle: "- Hackerrank",
-      logo_path: "hackerrank_logo.png",
-      certificate_link: "https://www.hackerrank.com/certificates/186dc9c7e36a",
-      alt_name: "Problem Solving Hackerrank",
-      color_code: "#D83B0199",
-    },
-    {
-      title: "React JS",
-      subtitle: "- Hackerrank",
-      logo_path: "hackerrank_logo.png",
-      certificate_link: "https://www.hackerrank.com/certificates/ef906dcaee86",
-      alt_name: "React Js hackerrank",
-      color_code: "#1F70C199",
-    },
-    {
-      title: "Robotic Process Automation",
-      subtitle: "- GUVI - IITM Research Park",
-      logo_path: "guvi_logo.png",
-      certificate_link:
-        "https://www.guvi.in/verify-certificate?id=EhvDj13049a9663J27",
-      alt_name: "Google",
-      color_code: "#ffff",
-    },
-    {
-      title: "Build a Face Recognition Application using Python",
-      subtitle: "- Guvi - AI India",
-      logo_path: "guvi_logo.png",
-      certificate_link:
-        "https://www.guvi.in/verify-certificate?id=649n0tXH18l34426Ju",
-      alt_name: "Build a Face Recognition Application using Python",
-      color_code: "#ffff",
-    },
-    {
-      title: " The Complete Android Ethical Hacking Practical Course C|AEHP",
-      subtitle: "- Udemy",
-      logo_path: "udemy_logo.png",
-      certificate_link:
-        "https://www.udemy.com/certificate/UC-c3555b8b-72f6-43ed-9ec3-7c0d0123e6cd/",
-      alt_name: "Android Ethical Hacking",
-      color_code: "#ffff",
     },
   ],
 };
@@ -476,9 +384,9 @@ const certifications = {
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Work Experience, Internships, and Leadership",
+  subtitle: "7+ Years Building at Scale",
   description:
-    "I am a senior full-stack developer with 6+ years of experience delivering high-impact digital products in finance, consulting, and education. I specialize in modern frontend systems, backend APIs, cloud engineering, and team mentorship to ship reliable software at scale.",
+    "From banking microservices serving 500K+ daily transactions at HCL, to scaling APIs for 1M+ users at Ascendion, to building Fidelity's first production RAG pipeline — I work across the full stack wherever there's a meaningful engineering problem to solve.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -486,83 +394,74 @@ const experience = {
       work: true,
       experiences: [
         {
-          title: "Senior Full Stack Developer",
-          company: "Capital One",
-          company_url: "https://www.capitalone.com/",
-          logo_path: "Capital_One-Logo.png",
-          duration: "June 2024 – Present",
-          location: "Richmond, VA, United States",
-          description:
-            "Building and modernizing customer-facing web applications using Vue.js, TypeScript, and RxJS in an enterprise banking environment. Delivering Node.js service enhancements, strong validation patterns, and resilient data integrations across PostgreSQL, Oracle, MongoDB, Cassandra, and DynamoDB. Driving code quality with automated test coverage (Jasmine/Karma), Agile delivery in Jira, and collaborative Git workflows.",
-          color: "#ff0000",
-        },
-        {
-          title: "Senior Full Stack Developer",
+          title: "Senior Software Engineer",
           company: "Fidelity Investments",
           company_url: "https://www.fidelity.com/",
           logo_path: "unh_logo.png",
-          duration: "August 2022 – May 2024",
-          location: "Merrimack, NH, United States",
+          duration: "June 2025 – Present",
+          location: "Roanoke, TX",
           description:
-            "Delivered secure, customer-facing financial platform capabilities using Angular/React frontends and Node.js/Java backend services. Built API integrations, improved transaction workflows, optimized application performance, and partnered with product, QA, and DevOps teams for reliable production releases.",
-          color: "#ff0000",
+            "Launched the team's first production RAG pipeline (LangChain + Pinecone) enabling wealth managers to query thousands of financial documents in plain English — picked up by 3 enterprise teams within 4 weeks. Slashed complex financial relationship query latency by 58% by replacing relational SQL with a Neo4j graph database enabling multi-hop traversal across client portfolio networks. Improved front-end Time-to-Interactive by 32% migrating the advisor portal from Create React App to Next.js 14 with SSR and Bun. Ran internal workshops on LangChain and RAG patterns for 4 engineers, cutting AI feature onboarding time by 3 weeks across two product squads.",
+          color: "#00d4ff",
         },
         {
           title: "Senior Full Stack Developer",
-          company: "Cognixia",
-          company_url: "https://www.cognixia.com/",
-          logo_path: "cognixia.png",
-          duration: "March 2024 – Present",
-          location: "Basking Ridge, NJ, United States",
+          company: "Ascendion",
+          company_url: "https://ascendion.com/",
+          logo_path: "Capital_One-Logo.png",
+          duration: "March 2024 – May 2025",
+          location: "Roanoke, TX",
           description:
-            "Delivered full-stack consulting solutions for enterprise clients using Angular, Vue.js, Node.js, and Python/Django. Implemented scalable APIs and dashboard experiences backed by PostgreSQL, Oracle, MongoDB, Cassandra, and DynamoDB. Collaborated with cross-functional teams to ship accessible UI/UX improvements, data visualizations, and tested releases under Agile-Scrum practices.",
-          color: "#ff0000",
+            "Reduced CI/CD pipeline execution time by 45% by migrating enterprise test suites from Cypress to Playwright, maintaining 95% code coverage across 250+ end-to-end test cases. Engineered scalable RESTful APIs using Java/Spring Boot and built Vue.js component architecture serving 1M+ monthly active users, reducing average page load time by 38%. Drove WCAG 2.1 AA accessibility compliance across 12 product screens, cutting screen-reader rendering latency by 22% and eliminating 40+ accessibility audit violations. Introduced API response caching via Redis, reducing database read load by 30% during peak traffic windows.",
+          color: "#7b2fff",
         },
         {
-          title: "Graduate Assistant & Provost Scholarship Recipient",
-          company: "University of New Haven",
-          company_url: "https://www.newhaven.edu/",
-          logo_path: "unh_logo.png",
-          duration: "August 2022 - December 2023",
-          location: "West Haven, Connecticut, United States",
+          title: "Full Stack Developer",
+          company: "StemSims",
+          company_url: "https://www.stemsims.com/",
+          logo_path: "college_logo.png",
+          duration: "June 2023 – September 2023",
+          location: "Gainesville, FL",
           description:
-            "Supported analytics-led academic initiatives at the University of New Haven while completing my M.S. in Business Analytics. Built reporting models and data-backed insights for program planning, contributed to workshops on data literacy, and helped improve academic decision-making through measurable performance tracking.",
-          color: "#ff0000",
+            "Developed React-based interactive STEM simulations with real-time data visualization and machine learning-driven feedback, improving student session completion rates by 20% across 300+ concurrent users. Redesigned PostgreSQL schemas with composite indexing for high-concurrency lab workloads, cutting average query time by 40%. Shipped a shared UI component library adopted across 6 simulation modules.",
+          color: "#00d4ff",
+        },
+        {
+          title: "Software Engineer",
+          company: "HCL Technologies",
+          company_url: "https://www.hcltech.com/",
+          logo_path: "hcl.png",
+          duration: "April 2020 – December 2022",
+          location: "Bengaluru, India",
+          description:
+            "Delivered and owned core banking microservices (Java/Spring Boot) for a top-5 Indian private bank, handling 500K+ daily transactions with 99.95% uptime SLA. Cut average API response time by 35% through PostgreSQL query optimization, connection pooling, and targeted JVM tuning on high-throughput payment processing endpoints. Containerized 8 legacy banking services with Docker and automated deployments via Jenkins CI/CD, achieving zero-downtime releases and reducing manual deployment effort by 70%.",
+          color: "#7b2fff",
         },
         {
           title: "Full Stack Software Dev Instructor",
           company: "AlmaBetter",
           company_url: "https://www.almabetter.com/",
           logo_path: "AlmaBetter_Logo.jpg",
-          duration: "May 2022 - December 2023",
+          duration: "May 2022 – December 2023",
           location: "Bengaluru, Karnataka",
           description:
-            "Mentored 300+ learners across multiple cohorts in full-stack development (JavaScript, React, Angular, Node.js, Python, Java, and SQL). Designed project-based curriculum, conducted code reviews, and supported interview readiness. Consistently received strong learner feedback for clear explanations, practical assignments, and career-focused mentorship.",
-          color: "#0879bf",
-        },
-        {
-          title: "Full Stack Software Engineer",
-          company: "HCL Technologies",
-          company_url: "https://www.hcltech.com/",
-          logo_path: "hcl.png",
-          duration: "August 2020 - August 2022",
-          location: "Bengaluru, Karnataka",
-          description: `Engineered and deployed enterprise applications for banking clients using Java, Spring Boot, microservices, REST APIs, and SQL/NoSQL data stores. Contributed to scalable architecture decisions, CI/CD delivery through Azure DevOps, and production reliability improvements. Recognized for consistent execution quality and impactful delivery across multiple releases.`,
-          color: "#0879bf",
+            "Mentored 300+ learners across multiple cohorts in full-stack development (JavaScript, React, Angular, Node.js, Python, Java, and SQL). Designed project-based curriculum, conducted code reviews, and supported interview readiness for FAANG-level roles.",
+          color: "#00d4ff",
         },
       ],
     },
     {
-      title: "Internships",
+      title: "Internships & Early Career",
       experiences: [
         {
           title: "Technical Instructor",
           company: "Udemy",
           company_url: "https://www.udemy.com/user/monesh-venkul-vommi2/",
           logo_path: "udemy.png",
-          duration: "December 2018 - July 2020",
-          location: "Vizag, AndhraPradesh",
-          description: `Created and published technical courses on programming and web development for a global audience. Taught Python, Java, JavaScript, and full-stack development fundamentals with a hands-on learning style. Built a growing learner community through practical projects and clear concept breakdowns.`,
+          duration: "December 2018 – July 2020",
+          location: "Remote",
+          description:
+            "Created and published technical courses on Python, Java, JavaScript, and full-stack web development for a global audience. Built a learner community through practical projects and clear concept breakdowns.",
           color: "#9b1578",
         },
         {
@@ -571,67 +470,22 @@ const experience = {
           company_url:
             "https://www.linkedin.com/company/service4startup/about/",
           logo_path: "service4startup.jfif",
-          duration: "December 2018 - March 2019",
-          location: "Chennai, TamilNadu",
+          duration: "December 2018 – March 2019",
+          location: "Chennai, India",
           description:
-            "Built a web-based product during internship by collaborating across product and engineering needs. Helped improve site performance and frontend usability, strengthened debugging practices, and delivered production-ready UI features as part of a small agile team.",
+            "Built production-ready UI features, improved site performance and frontend usability for an early-stage startup as part of a small agile team.",
           color: "#fc1f20",
         },
         {
-          title: "Content Creator",
-          company: "YouTube",
-          company_url:
-            "https://www.youtube.com/channel/UCRQ77SxTf4WRoJEO6YNPakA",
-          logo_path: "youtube.png",
-          duration: "December 2018 - August 2020",
-          location: "Chennai, TamilNadu & Vizag, AndhraPradesh",
-          description:
-            "Built and managed technical tutorial content for an online audience, focusing on developer education and practical software topics.",
-          color: "orange",
-        },
-        {
-          title: "Social Media Marketing Specialist",
-          company: "mLearning Community",
-          company_url: "http://www.m-learning.in/",
-          logo_path: "mlearning.jpg",
-          duration: "June 2018 - July 2018",
-          location: "Chennai, TamilNadu",
-          description:
-            "Improved social engagement and digital outreach through campaign planning, content execution, and consistent community management.",
-          color: "blue",
-        },
-        {
-          title: "Enterprise Resources Planning Developer",
-          company: "Steel Plant",
+          title: "ERP Developer Intern",
+          company: "Steel Plant (RINL Vizag Steel)",
           company_url: "https://www.vizagsteel.com/index.asp",
           logo_path: "steelplant.png",
-          duration: "April 2018 - May 2018",
-          location: "Chennai, TamilNadu",
+          duration: "April 2018 – May 2018",
+          location: "Visakhapatnam, India",
           description:
-            "Supported ERP-related development tasks and presentations, gaining early exposure to structured enterprise workflows and stakeholder communication.",
-          color: "black",
-        },
-        {
-          title: "App Developer",
-          company: "Learnorama",
-          company_url: "",
-          logo_path: "learnorama.jpg",
-          duration: "December 2017 — January 2018",
-          location: "Chennai, TamilNadu",
-          description:
-            "Led a small team to build a hackathon app prototype and received recognition for implementation quality and delivery.",
-          color: "pink",
-        },
-        {
-          title: "Front End Web Developer",
-          company: "Different Hair",
-          company_url: "",
-          logo_path: "differenthair.jpeg",
-          duration: "July 2017 — September 2017",
-          location: "Chennai, TamilNadu",
-          description:
-            "Designed and implemented frontend UI improvements for better usability and user experience.",
-          color: "green",
+            "Supported ERP-related development tasks, gaining early exposure to enterprise workflows and stakeholder communication.",
+          color: "#0879bf",
         },
       ],
     },
@@ -639,37 +493,26 @@ const experience = {
       title: "Volunteerships",
       experiences: [
         {
+          title: "Cognizant Student Partner",
+          company: "Cognizant",
+          company_url: "https://www.cognizant.com/",
+          logo_path: "cognizant.jfif",
+          duration: "Aug 2019 – May 2020",
+          location: "Hyderabad, Telangana",
+          description:
+            "Led student outreach activities and cloud-awareness sessions, helping peers adopt Azure tools and modern development practices.",
+          color: "#D83B01",
+        },
+        {
           title: "Student Volunteer",
-          company: "Sathyabama University - Village Ticket",
+          company: "Sathyabama University",
           company_url: "https://www.sathyabama.ac.in/",
           logo_path: "college_logo.png",
           duration: "January 2019 – February 2019",
           location: "Chennai, TamilNadu",
           description:
-            "Contributed as a student volunteer for a university community event, supporting planning, coordination, and on-ground execution.",
+            "Contributed as a student volunteer for university community events, supporting planning, coordination, and on-ground execution.",
           color: "#4285F4",
-        },
-        {
-          title: "Front End Web Developer",
-          company: "Different Hair",
-          company_url: "",
-          logo_path: "differenthair.jpeg",
-          duration: "July 2017 — September 2017",
-          location: "Chennai, TamilNadu",
-          description:
-            "Designed and implemented frontend UI improvements for better usability and user experience.",
-          color: "green",
-        },
-        {
-          title: "Cognizant Student Partner",
-          company: "Cognizant",
-          company_url: "https://www.cognizant.com/",
-          logo_path: "cognizant.jfif",
-          duration: "Aug 2019 - May 2020",
-          location: "Hyderabad, Telangana",
-          description:
-            "Led student outreach activities and cloud-awareness sessions, helping peers adopt Azure tools and modern development practices.",
-          color: "#D83B01",
         },
       ],
     },
@@ -680,14 +523,13 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "A curated collection of full-stack, cloud, and analytics projects that showcase end-to-end delivery—from architecture and development to deployment, performance tuning, and business impact.",
+    "Production-grade AI, full-stack, and cloud projects — each built to solve a real problem with measurable impact.",
   avatar_image_path: "projects_image.svg",
 };
 
 const publicationsHeader = {
   title: "Publications",
-  description:
-    "Research and technical writing focused on cloud security, system design, and applied software innovation.",
+  description: "Research on cloud security and applied software innovation.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -697,7 +539,8 @@ const publications = {
       id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
       name: "Multi-layer Security in Cloud Storage Using Cryptography",
       createdAt: "2021-05-06T16:26:54Z",
-      description: `I have authored a paper titled "Multi-layer Security in Cloud Storage Using Cryptography," which delves into the critical aspect of enhancing security measures in cloud storage environments. This paper focuses on the implementation of advanced cryptographic techniques to create a multi-layered defense mechanism. By analyzing various encryption methods and their application in cloud storage, the paper presents a comprehensive approach to securing sensitive data against potential cyber threats. The research underpinning this paper reflects my deep interest in cloud security and my commitment to developing innovative solutions to bolster data protection in the increasingly cloud-reliant world of information technology.`,
+      description:
+        "Scopus-indexed research on implementing advanced cryptographic techniques to create a multi-layered security defense mechanism for cloud storage environments. Analyzes various encryption methods and their application to protect sensitive data against cyber threats.",
       url: "https://www.scopus.com/authid/detail.uri?authorId=57223107648",
     },
   ],
@@ -706,33 +549,33 @@ const publications = {
 // Contact Page
 const contactPageData = {
   contactSection: {
-    title: "Contact Me",
+    title: "Let's Connect",
     profile_image_path: "MyPic.jpg",
     description:
-      "I am open to senior software engineering opportunities, solution architecture roles, and high-impact collaborations in full-stack and cloud engineering.",
+      "Open to Senior Software Engineer, Staff Engineer, and AI/ML Engineering roles at FAANG and top-tier tech companies. Also available for consulting on RAG pipelines, distributed systems, and high-scale backend architecture.",
   },
   blogSection: {
-    title: "Blogs",
+    title: "Writing & Insights",
     subtitle:
-      "I regularly share technical insights, project learnings, and engineering best practices through LinkedIn posts and long-form content.",
+      "I share technical deep-dives on AI/ML engineering, RAG pipelines, distributed systems, and career lessons from working across fintech and enterprise.",
     link:
       "https://www.linkedin.com/in/monesh-venkul-vommi-8a80b6174/recent-activity/all/",
     avatar_image_path: "blogs_image.svg",
   },
   addressSection: {
-    title: "Address",
-    subtitle: "West Haven, CT 06516",
-    locality: "West Haven",
+    title: "Location",
+    subtitle: "Dallas-Fort Worth, TX — Open to Remote",
+    locality: "Dallas",
     country: "USA",
-    region: "Connecticut",
-    postalCode: "06516",
-    streetAddress: "300 Boston Post Rd",
+    region: "Texas",
+    postalCode: "75001",
+    streetAddress: "Dallas-Fort Worth Metroplex",
     avatar_image_path: "address_image.svg",
     location_map_link: "https://maps.app.goo.gl/ELNQUUj5o4UrPKab8",
   },
   phoneSection: {
     title: "Phone",
-    subtitle: "+1 (475)4411062",
+    subtitle: "+1 (475) 441-1062",
   },
 };
 

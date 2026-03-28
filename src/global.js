@@ -8,15 +8,32 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    align-items: center;
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-    display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // height: 100vh;
-    // margin: 0;
-    // padding: 0;
-    font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    transition: all 0.25s linear;
-  }`;
+    font-family: "Inter", "Google Sans Regular", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background 0.3s ease, color 0.3s ease;
+    min-height: 100vh;
+  }
+
+  /* Dark experience accordion */
+  .bui-accordion-panel-content {
+    background: ${({ theme }) => theme.body} !important;
+  }
+
+  .bui-accordion-panel-header {
+    background: ${({ theme }) => theme.dark} !important;
+    border: 1px solid rgba(0, 212, 255, 0.12) !important;
+    border-radius: 12px !important;
+    color: ${({ theme }) => theme.text} !important;
+    font-family: "Inter", "Google Sans Regular", sans-serif !important;
+    margin-bottom: 6px !important;
+    transition: all 0.2s ease !important;
+  }
+
+  .bui-accordion-panel-header:hover {
+    border-color: rgba(0, 212, 255, 0.28) !important;
+    box-shadow: 0 4px 16px rgba(0, 212, 255, 0.08) !important;
+  }
+`;
