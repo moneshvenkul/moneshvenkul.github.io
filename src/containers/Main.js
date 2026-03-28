@@ -7,6 +7,10 @@ import Experience from "../pages/experience/Experience";
 import Opensource from "../pages/opensource/Opensource";
 import Contact from "../pages/contact/ContactComponent";
 import Projects from "../pages/projects/Projects";
+import Tools from "../pages/tools/Tools";
+import Prep from "../pages/prep/Prep";
+import Dashboard from "../pages/dashboard/Dashboard";
+import Blog from "../pages/blog/Blog";
 import { settings } from "../portfolio.js";
 import Error404 from "../pages/errors/error404/Error";
 
@@ -64,6 +68,24 @@ export default class Main extends Component {
           <Route
             path="/projects"
             render={(props) => <Projects {...props} theme={this.props.theme} />}
+          />
+          <Route
+            path="/tools"
+            render={(props) => <Tools {...props} theme={this.props.theme} />}
+          />
+          <Route
+            path="/prep"
+            render={(props) => <Prep {...props} theme={this.props.theme} />}
+          />
+          <Route
+            path="/dashboard"
+            render={(props) => (
+              <Dashboard {...props} theme={this.props.theme} />
+            )}
+          />
+          <Route
+            path="/blog"
+            render={(props) => <Blog {...props} theme={this.props.theme} />}
           />
           <Route
             path="*"

@@ -419,15 +419,87 @@ export const knowledgeBase = [
     response:
       "You can **view Monesh's resume** via the resume button on this page, or reach out to him directly at mvvenkul@gmail.com to request a copy. His LinkedIn profile at linkedin.com/in/monesh-venkul-vommi-8a80b6174 also has his full work history.",
   },
+  {
+    id: "tools_page",
+    keywords: [
+      "tools",
+      "free tools",
+      "resume enhancer",
+      "stack recommender",
+      "sql explainer",
+      "system design cards",
+      "flashcards",
+      "tech stack",
+      "enhance bullet",
+    ],
+    response:
+      "This site has **4 free AI-powered dev tools** at the /tools page:\n\n⚙️ **Resume Bullet Enhancer** — Paste a weak resume bullet and get an action-verb, metric-driven FAANG-ready version instantly\n\n🔧 **Tech Stack Recommender** — Answer 5 questions about your project and get a tailored stack recommendation\n\n🗄️ **SQL Explainer** — Paste any SQL query and get a plain-English breakdown with clause-by-clause analysis\n\n🃏 **System Design Flashcards** — 10+ cards covering Load Balancers, Caching, CDNs, and more — click to expand full breakdowns\n\nAll client-side — no data leaves your browser. Check them out at the **Tools** link in the nav!",
+  },
+  {
+    id: "prep_page",
+    keywords: [
+      "interview prep",
+      "faang prep",
+      "dsa",
+      "data structures",
+      "algorithms",
+      "behavioral",
+      "star",
+      "system design interview",
+      "leetcode patterns",
+      "prep",
+      "prepare",
+      "interview",
+      "crack",
+    ],
+    response:
+      "There's a full **FAANG Interview Prep Hub** at the /prep page:\n\n🧩 **DSA Patterns** — Filterable by difficulty & category (Sliding Window, Two Pointers, BFS/DFS, DP, and more) — each with complexity analysis, key insight, and a code template\n\n🏗️ **System Design Templates** — Real templates for URL Shortener, Rate Limiter, Notification Service, and more — components, approach steps, and key numbers\n\n🗣️ **Behavioral Q&As** — Full STAR-formatted answers for Leadership, Conflict, Failure, Innovation questions\n\nThis is distilled from **7+ years of engineering + 300+ LeetCode problems**. Head to **Interview Prep** in the nav!",
+  },
+  {
+    id: "dashboard_page",
+    keywords: [
+      "dashboard",
+      "activity",
+      "currently building",
+      "building now",
+      "github activity",
+      "commits",
+      "streak",
+      "learning",
+      "progress",
+      "what are you working on",
+      "side projects",
+    ],
+    response:
+      "Check out the **Live Dashboard** at /dashboard to see what Monesh is working on right now:\n\n📊 **Open Source Activity** — Total contributions, current streak, stars, forks\n\n📈 **Weekly Commit Chart** — Animated bar chart of this week's commits\n\n🟡 **LeetCode Ring** — Solved count, Easy/Medium/Hard breakdown, contest rating\n\n🚀 **Currently Building** — 3 active projects: ContextFlow (Multi-Agent RAG), WealthLens (Finance Dashboard), prcli (AI PR Review CLI)\n\n📚 **Currently Learning** — Rust, RLHF/Fine-tuning, K8s, Competitive Math — with live progress bars",
+  },
+  {
+    id: "blog_page",
+    keywords: [
+      "blog",
+      "articles",
+      "posts",
+      "write",
+      "writing",
+      "technical writing",
+      "read",
+      "digest",
+      "weekly digest",
+      "deep dive",
+      "tutorial",
+    ],
+    response:
+      "Monesh writes long-form technical posts on the **Blog** page at /blog:\n\n✍️ **Neo4j Graph Traversal** — How he cut API latency 58% at Fidelity by replacing SQL with graph DB\n\n🤖 **Production RAG Pipeline** — Building Fidelity's first LLM pipeline from scratch — chunking, retrieval, security, and enterprise adoption\n\n☁️ **AWS SAA Exam in 3 Weeks** — The exact study plan he used to pass the cert\n\n⚛️ **Vue.js vs React in Enterprise** — Real trade-offs from a 1M+ user healthcare portal\n\nPlus a **Weekly Tech Digest** with curated links across AI, Backend, Frontend, and Cloud. Head to **Blog** in the nav!",
+  },
 ];
 
 export const suggestedQuestions = [
   "Tell me about Monesh",
   "What are his AI/ML skills?",
   "Experience at Fidelity?",
-  "Projects he's built?",
+  "Free tools on this site?",
+  "Interview prep resources?",
   "Is he open to work?",
-  "FAANG-ready?",
 ];
 
 export function findBestResponse(userInput) {

@@ -85,6 +85,46 @@ class Header extends Component {
               </li>
               <li>
                 <NavLink
+                  to="/blog"
+                  tag={Link}
+                  activeClassName="active-nav-link"
+                  style={{ color: theme.text }}
+                >
+                  Blog
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/tools"
+                  tag={Link}
+                  activeClassName="active-nav-link"
+                  style={{ color: theme.text }}
+                >
+                  Tools
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/prep"
+                  tag={Link}
+                  activeClassName="active-nav-link"
+                  style={{ color: theme.text }}
+                >
+                  Interview Prep
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/dashboard"
+                  tag={Link}
+                  activeClassName="active-nav-link"
+                  style={{ color: theme.text }}
+                >
+                  Dashboard
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
                   to="/contact"
                   tag={Link}
                   activeClassName="active-nav-link"
