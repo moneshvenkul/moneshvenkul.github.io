@@ -315,7 +315,8 @@ const certifications = {
       title: "AWS Certified Solutions Architect – Associate",
       subtitle: "Amazon Web Services",
       logo_path: "aws_logo.svg",
-      certificate_link: "https://www.credly.com/badges/",
+      certificate_link:
+        "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
       alt_name: "AWS",
       color_code: "#FF990099",
     },
@@ -570,7 +571,8 @@ const contactPageData = {
     postalCode: "75001",
     streetAddress: "Dallas-Fort Worth Metroplex",
     avatar_image_path: "address_image.svg",
-    location_map_link: "https://maps.app.goo.gl/ELNQUUj5o4UrPKab8",
+    location_map_link:
+      "https://www.google.com/maps/place/Dallas-Fort+Worth+Metroplex,+TX",
   },
   phoneSection: {
     title: "Phone",

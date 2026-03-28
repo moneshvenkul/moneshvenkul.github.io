@@ -252,13 +252,13 @@
 
 .greeting-skill-pill:nth-child(3) {
   top: 20%;
-  right: 0%;
+  right: 6%;
   animation: float 5.5s ease-in-out 0.3s infinite;
 }
 
 .greeting-skill-pill:nth-child(4) {
   top: 72%;
-  right: -5%;
+  right: 4%;
   animation: float 6s ease-in-out 1.2s infinite;
 }
 
