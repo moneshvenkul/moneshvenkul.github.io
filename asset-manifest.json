@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.44cc40df.chunk.css",
-    "main.js": "./static/js/main.23b13a7f.chunk.js",
-    "main.js.map": "./static/js/main.23b13a7f.chunk.js.map",
+    "main.css": "./static/css/main.2dff94c7.chunk.css",
+    "main.js": "./static/js/main.a017aca6.chunk.js",
+    "main.js.map": "./static/js/main.a017aca6.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.010d0e8e.js",
     "runtime-main.js.map": "./static/js/runtime-main.010d0e8e.js.map",
     "static/js/2.312bd7df.chunk.js": "./static/js/2.312bd7df.chunk.js",
     "static/js/2.312bd7df.chunk.js.map": "./static/js/2.312bd7df.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.cd5f2888873b11437a81ba099aee2d1b.js": "./precache-manifest.cd5f2888873b11437a81ba099aee2d1b.js",
+    "precache-manifest.ae46982787e7cee480310826db4769fd.js": "./precache-manifest.ae46982787e7cee480310826db4769fd.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.44cc40df.chunk.css.map": "./static/css/main.44cc40df.chunk.css.map",
+    "static/css/main.2dff94c7.chunk.css.map": "./static/css/main.2dff94c7.chunk.css.map",
     "static/media/index.css": "./static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/AlmaBetter_Logo.jpg": "./static/media/AlmaBetter_Logo.c24f4be5.jpg",
     "static/media/Capital_One-Logo.png": "./static/media/Capital_One-Logo.0a71b796.png",
@@ -78,7 +78,7 @@
   "entrypoints": [
     "static/js/runtime-main.010d0e8e.js",
     "static/js/2.312bd7df.chunk.js",
-    "static/css/main.44cc40df.chunk.css",
-    "static/js/main.23b13a7f.chunk.js"
+    "static/css/main.2dff94c7.chunk.css",
+    "static/js/main.a017aca6.chunk.js"
   ]
 }
