@@ -1,14 +1,6 @@
 /* ============================================================
-   Hero / Greeting Section — 2026 Elite Design
+   Hero / Greeting Section — Neural Interface 2026
    ============================================================ */
-
-.main {
-  width: 90%;
-  max-width: 1200px;
-  padding: 20px 10px;
-  margin: 0 auto;
-  margin-top: 4rem;
-}
 
 .greet-main {
   width: 90%;
@@ -16,12 +8,19 @@
   padding: 20px 10px;
   margin: 0 auto;
   margin-top: 0;
+  position: relative;
 }
 
-.gretting-main {
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0 auto;
+/* ── Particle canvas ── */
+.greeting-canvas {
+  position: absolute;
+  top: 0;
+  left: -5%;
+  width: 110%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.55;
 }
 
 .greeting-main {
@@ -30,6 +29,8 @@
   gap: 3rem;
   min-height: calc(100vh - 90px);
   padding: 3rem 0;
+  position: relative;
+  z-index: 1;
 }
 
 .greeting-main > * {
@@ -44,17 +45,43 @@
   gap: 1.2rem;
 }
 
-/* Availability badge */
+/* ── Availability badge ── */
 .greeting-badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(0, 255, 136, 0.08);
-  border: 1px solid rgba(0, 255, 136, 0.25);
+  background: rgba(0, 255, 136, 0.07);
+  border: 1px solid rgba(0, 255, 136, 0.28);
   border-radius: 999px;
   padding: 6px 16px;
   width: fit-content;
   animation: fadeInUp 0.6s ease both;
+  position: relative;
+  overflow: hidden;
+}
+
+.greeting-badge::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 255, 136, 0.12),
+    transparent
+  );
+  transform: translateX(-100%);
+  animation: shimmer-badge 3s ease infinite;
+}
+
+@keyframes shimmer-badge {
+  0% {
+    transform: translateX(-100%);
+  }
+  60%,
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 .greeting-badge__dot {
@@ -62,52 +89,57 @@
   height: 8px;
   border-radius: 50%;
   background: #00ff88;
-  box-shadow: 0 0 8px rgba(0, 255, 136, 0.6);
+  box-shadow: 0 0 8px rgba(0, 255, 136, 0.7);
   animation: pulse-green 2s ease-in-out infinite;
+  flex-shrink: 0;
 }
 
 .greeting-badge__text {
-  font-size: 0.72rem;
-  font-weight: 600;
+  font-size: 0.68rem;
+  font-weight: 700;
   color: #00ff88;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   font-family: "Inter", "Google Sans Regular", sans-serif;
 }
 
-@keyframes pulse-green {
-  0%,
-  100% {
-    box-shadow: 0 0 6px rgba(0, 255, 136, 0.5);
-  }
-  50% {
-    box-shadow: 0 0 14px rgba(0, 255, 136, 0.9);
-  }
-}
-
-/* Name */
+/* ── Name with glitch ── */
 .greeting-text {
   margin: 0;
   font-size: 4rem;
   line-height: 1.05;
   font-family: "Google Sans Bold", "Inter", sans-serif;
   font-weight: 800;
-  background: linear-gradient(135deg, #e8f4fd 30%, #7a9cbf 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  background-clip: text !important;
+  background: linear-gradient(135deg, #e8f4fd 20%, #7a9cbf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   animation: fadeInUp 0.7s ease 0.1s both;
+  position: relative;
 }
 
-/* Role typing line */
+.glitch-title {
+  animation: fadeInUp 0.7s ease 0.1s both, glitch 8s ease-in-out 3s infinite;
+}
+
+/* ── Role typing line ── */
 .greeting-role {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 600;
   font-family: "Google Sans Medium", "Inter", sans-serif;
   color: #00d4ff;
   animation: fadeInUp 0.7s ease 0.2s both;
   min-height: 2rem;
   line-height: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.greeting-role__prefix,
+.greeting-role__suffix {
+  color: rgba(0, 212, 255, 0.45);
+  font-size: 0.9em;
 }
 
 .greeting-role__cursor {
@@ -115,12 +147,14 @@
   width: 2px;
   height: 1.1em;
   background: #00d4ff;
-  margin-left: 3px;
+  margin-left: 2px;
+  margin-right: 2px;
   vertical-align: middle;
   animation: blink-cursor 1s step-end infinite;
+  box-shadow: 0 0 8px rgba(0, 212, 255, 0.8);
 }
 
-/* Subtitle */
+/* ── Subtitle ── */
 .greeting-text-p {
   font-size: 1rem !important;
   line-height: 1.75 !important;
@@ -131,12 +165,12 @@
   margin-right: 0 !important;
 }
 
-/* Stats row */
+/* ── Stats row ── */
 .greeting-stats {
   display: flex;
-  gap: 2.5rem;
+  gap: 2rem;
   animation: fadeInUp 0.7s ease 0.4s both;
-  padding: 1rem 0;
+  padding: 1.2rem 0;
   border-top: 1px solid rgba(0, 212, 255, 0.1);
   border-bottom: 1px solid rgba(0, 212, 255, 0.1);
 }
@@ -145,10 +179,27 @@
   display: flex;
   flex-direction: column;
   gap: 2px;
+  position: relative;
+}
+
+.greeting-stat::after {
+  content: "";
+  position: absolute;
+  bottom: -1.2rem;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--accent-gradient);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.greeting-stat:hover::after {
+  transform: scaleX(1);
 }
 
 .greeting-stat__number {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 800;
   font-family: "Google Sans Bold", sans-serif;
   background: linear-gradient(135deg, #00d4ff, #7b2fff);
@@ -156,41 +207,36 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   line-height: 1.1;
+  transition: transform 0.2s ease;
+}
+
+.greeting-stat:hover .greeting-stat__number {
+  animation: number-pop 0.4s ease;
 }
 
 .greeting-stat__label {
-  font-size: 0.68rem;
-  font-weight: 500;
+  font-size: 0.62rem;
+  font-weight: 600;
   color: #4a6a8a;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.07em;
   font-family: "Inter", sans-serif;
 }
 
-/* Nickname - repurposed as a subtitle tag */
-.greeting-nickname {
-  font-size: 0.9rem;
-  font-family: "Inter", "Google Sans Regular", sans-serif;
-  font-weight: 500;
-  color: #4a6a8a;
-  line-height: 1.5;
-  margin: 0;
-}
-
-/* Buttons */
+/* ── Buttons ── */
 .button-greeting-div {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
   animation: fadeInUp 0.7s ease 0.5s both;
-  margin-top: 0;
+  margin-top: 0.2rem;
 }
 
 .portfolio-repo-btn-div {
   animation: fadeInUp 0.7s ease 0.5s both;
 }
 
-/* ── Image Side ── */
+/* ── Image / Visual Side ── */
 .greeting-image-div {
   display: flex;
   align-items: center;
@@ -199,67 +245,110 @@
   animation: fadeInUp 0.9s ease 0.2s both;
 }
 
-.greeting-image-div > * {
+.greeting-image-div > svg,
+.greeting-image-div > img {
   max-width: 100%;
   height: auto;
-  filter: drop-shadow(0 0 40px rgba(0, 212, 255, 0.15));
+  filter: drop-shadow(0 0 40px rgba(0, 212, 255, 0.18));
   animation: float 6s ease-in-out infinite;
+  position: relative;
+  z-index: 2;
 }
 
-/* Glow orb behind SVG */
+/* Glow orb behind visual */
 .greeting-image-div::before {
   content: "";
   position: absolute;
-  width: 320px;
-  height: 320px;
+  width: 340px;
+  height: 340px;
   border-radius: 50%;
   background: radial-gradient(
     circle,
     rgba(0, 212, 255, 0.1) 0%,
-    rgba(123, 47, 255, 0.07) 50%,
+    rgba(123, 47, 255, 0.08) 50%,
     transparent 70%
   );
-  z-index: -1;
+  z-index: 0;
+  animation: pulse-glow 4s ease-in-out infinite;
 }
 
-/* Tech pills floating */
-.greeting-skill-pill {
+/* ── Orbit ring ── */
+.greeting-orbit-ring {
   position: absolute;
-  background: rgba(10, 16, 35, 0.9);
-  border: 1px solid rgba(0, 212, 255, 0.22);
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  border: 1px dashed rgba(0, 212, 255, 0.12);
+  animation: spin-slow 30s linear infinite;
+  z-index: 3;
+}
+
+/* Second orbit ring */
+.greeting-orbit-ring::after {
+  content: "";
+  position: absolute;
+  inset: 20px;
+  border-radius: 50%;
+  border: 1px dashed rgba(123, 47, 255, 0.1);
+}
+
+/* Orbit pills */
+.greeting-orbit-pill {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(10, 16, 35, 0.92);
+  border: 1px solid rgba(0, 212, 255, 0.25);
   border-radius: 999px;
-  padding: 5px 12px;
-  font-size: 0.68rem;
-  font-weight: 600;
+  padding: 5px 13px;
+  font-size: 0.66rem;
+  font-weight: 700;
   color: #00d4ff;
   font-family: "Inter", sans-serif;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(12px);
   white-space: nowrap;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 212, 255, 0.1);
+  letter-spacing: 0.04em;
+  /* counter-rotate so text stays upright */
+  animation: spin-counter 30s linear infinite;
 }
 
-.greeting-skill-pill:nth-child(1) {
-  top: 12%;
-  left: -5%;
-  animation: float 5s ease-in-out infinite;
+.greeting-orbit-pill:hover {
+  border-color: rgba(0, 212, 255, 0.6);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 212, 255, 0.3);
 }
 
-.greeting-skill-pill:nth-child(2) {
-  top: 55%;
-  left: -12%;
-  animation: float 6.2s ease-in-out 0.8s infinite;
+.orbit-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #00d4ff;
+  box-shadow: 0 0 6px rgba(0, 212, 255, 0.8);
+  flex-shrink: 0;
+  animation: pulse-green 2s ease-in-out infinite;
 }
 
-.greeting-skill-pill:nth-child(3) {
-  top: 20%;
-  right: 6%;
-  animation: float 5.5s ease-in-out 0.3s infinite;
+/* Pills placed around the ring using transform-origin */
+.orbit-1 {
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-
-.greeting-skill-pill:nth-child(4) {
-  top: 72%;
-  right: 4%;
-  animation: float 6s ease-in-out 1.2s infinite;
+.orbit-2 {
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.orbit-3 {
+  left: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.orbit-4 {
+  right: -60px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* ── Media Queries ── */
@@ -273,6 +362,10 @@
 }
 
 @media (max-width: 768px) {
+  .greeting-canvas {
+    display: none;
+  }
+
   .greeting-main {
     flex-direction: column;
     min-height: auto;
@@ -280,38 +373,55 @@
     text-align: center;
     gap: 2rem;
   }
+
   .greeting-text {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
   }
   .greeting-role {
     font-size: 0.95rem;
+    justify-content: center;
   }
+
   .greeting-text-p {
     max-width: 100% !important;
     text-align: center;
   }
+
   .greeting-badge {
     align-self: center;
   }
+
   .greeting-stats {
     justify-content: center;
     gap: 1.5rem;
     flex-wrap: wrap;
   }
+
   .button-greeting-div,
   .portfolio-repo-btn-div {
     justify-content: center;
   }
+
   .greeting-image-div {
     order: -1;
-    max-width: 260px;
+    max-width: 280px;
     margin: 0 auto;
   }
+
   .greeting-image-div::before {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
   }
-  .greeting-skill-pill {
-    display: none;
+
+  .greeting-orbit-ring {
+    width: 280px;
+    height: 280px;
+  }
+
+  .orbit-3 {
+    left: -50px;
+  }
+  .orbit-4 {
+    right: -50px;
   }
 }

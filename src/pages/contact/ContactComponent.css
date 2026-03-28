@@ -1,58 +1,38 @@
+/* ============================================================
+   Contact Page — Neural Interface 2026
+   ============================================================ */
+
 .contact-main {
   width: 100%;
 }
 
 .basic-contact {
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 5rem 1rem 2rem;
 }
 
+/* ── Contact heading (hero) ── */
 .contact-heading-div {
   display: flex;
-}
-
-.blog-heading-div {
-  display: flex;
-}
-
-.address-heading-div {
-  display: flex;
-  margin-top: 80px;
-}
-
-.blog-heading-div > * {
-  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.8rem;
 }
 
 .contact-heading-div > * {
-  flex: 1;
-}
-
-.address-heading-div > * {
-  flex: 1;
+  flex: none;
 }
 
 .contact-heading-img-div {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.blog-heading-img-div {
-  align-items: center;
-  justify-content: center;
-}
-
-.contact-heading-text-div {
-  text-align: center;
-}
-
-.blog-heading-text-div {
-  text-align: center;
-}
-
-.address-heading-text-div {
-  text-align: center;
+  max-width: 240px;
+  animation: float 5s ease-in-out infinite;
+  filter: drop-shadow(0 0 30px rgba(0, 212, 255, 0.18));
 }
 
 .contact-heading-img-div > * {
@@ -60,135 +40,193 @@
   height: auto;
 }
 
+.contact-heading-text-div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.contact-heading-text {
+  font-size: 3.8rem;
+  font-weight: 800;
+  font-family: "Google Sans Bold", "Inter", sans-serif;
+  line-height: 1.05;
+  margin: 0;
+  background: linear-gradient(135deg, #00d4ff 0%, #7b2fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fadeInUp 0.7s ease both;
+}
+
+.contact-header-detail-text {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin: 0;
+  max-width: 580px;
+  font-family: "Inter", "Google Sans Regular", sans-serif;
+  animation: fadeInUp 0.7s ease 0.15s both;
+}
+
+/* Resume button */
+.resume-btn-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* ── Blog / Writing section ── */
+.blog-heading-div {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5rem;
+  padding: 2.5rem;
+  background: rgba(13, 21, 38, 0.7);
+  border: 1px solid rgba(0, 212, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(16px);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-heading-div:hover {
+  border-color: rgba(0, 212, 255, 0.22);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 212, 255, 0.06);
+}
+
+.blog-heading-div > * {
+  flex: 1;
+}
+
+.blog-heading-img-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: float 7s ease-in-out infinite;
+  filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.12));
+}
+
 .blog-heading-img-div > * {
   max-width: 100%;
   height: auto;
 }
 
-.contact-heading-text {
-  font-size: 56px;
-  font-weight: 400;
-  font-family: "Google Sans Medium";
-  line-height: 1.1;
-  text-align: center;
-  margin-top: 60px;
+.blog-heading-text-div {
+  text-align: left;
 }
 
 .blog-heading-text {
-  font-size: 56px;
-  font-weight: 400;
-  font-family: "Google Sans Medium";
+  font-size: 2.4rem;
+  font-weight: 800;
+  font-family: "Google Sans Bold", "Inter", sans-serif;
   line-height: 1.1;
-  text-align: center;
-  margin-top: 40px;
-}
-
-.address-heading-text {
-  font-size: 30px;
-  font-family: "Google Sans Regular";
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.contact-header-detail-text {
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: "Google Sans Medium";
+  margin: 0 0 0.6rem;
+  background: linear-gradient(135deg, #7b2fff 0%, #00d4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .blog-header-detail-text {
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: "Google Sans Medium";
-}
-
-.resume-btn-div {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin: 0 0 1.2rem;
+  font-family: "Inter", sans-serif;
 }
 
 .blogsite-btn-div {
-  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+}
+
+/* ── Address section ── */
+.address-heading-div {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  padding: 2.5rem;
+  background: rgba(13, 21, 38, 0.7);
+  border: 1px solid rgba(123, 47, 255, 0.12);
+  border-radius: 20px;
+  backdrop-filter: blur(16px);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.address-heading-div:hover {
+  border-color: rgba(123, 47, 255, 0.3);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(123, 47, 255, 0.06);
+}
+
+.address-heading-div > * {
+  flex: 1;
+}
+
+.address-heading-text-div {
+  text-align: center;
+}
+
+.address-heading-text {
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: "Google Sans Bold", "Inter", sans-serif;
+  margin-bottom: 0.8rem;
+  background: linear-gradient(135deg, #7b2fff 0%, #00d4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .address-btn-div {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 0;
+  margin-top: 1rem;
 }
 
+/* ── Responsive ── */
 @media (max-width: 1380px) {
   .contact-heading-text {
-    font-size: 50px;
-    margin-top: 60px;
+    font-size: 3rem;
   }
-
   .blog-heading-text {
-    font-size: 50px;
-    margin-top: 40px;
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 768px) {
+  .basic-contact {
+    padding: 3.5rem 1rem 2rem;
+  }
   .contact-heading-text {
-    font-size: 30px;
-    margin-top: 0px;
+    font-size: 2.2rem;
+  }
+
+  .blog-heading-div,
+  .address-heading-div {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.8rem;
   }
 
   .blog-heading-text {
-    font-size: 30px;
-    margin-top: 0px;
+    font-size: 1.7rem;
   }
-
-  .address-heading-text {
-    font-size: 20px;
-  }
-
-  .blog-heading-div {
-    flex-direction: column-reverse;
-    margin-top: 60px;
-  }
-
-  .address-heading-div {
-    flex-direction: column;
-    margin-top: 60px;
-  }
-
   .blog-heading-text-div {
-    margin-top: 40px;
+    text-align: center;
   }
-
-  .address-heading-text-div {
-    margin-top: 40px;
-  }
-
-  .contact-heading-div {
-    flex-direction: column;
+  .blogsite-btn-div {
+    justify-content: center;
   }
 
   .contact-header-detail-text {
-    font-size: 16px;
-    margin-left: 0px;
-    margin-right: 0px;
-    line-height: normal;
-    text-align: center;
+    font-size: 0.88rem;
   }
 
   .blog-header-detail-text {
-    font-size: 16px;
-    margin-left: 0px;
-    margin-right: 0px;
-    line-height: normal;
     text-align: center;
   }
 }

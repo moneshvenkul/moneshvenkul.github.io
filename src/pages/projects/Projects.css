@@ -1,117 +1,224 @@
+/* ============================================================
+   Projects Page — Neural Interface 2026
+   ============================================================ */
+
 .projects-main {
   width: 100%;
+}
+
+/* ── Hero ── */
+.projects-hero {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5rem 1rem 3rem;
   text-align: center;
 }
 
-.basic-projects {
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.projects-heading-div {
+.projects-hero__inner {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
 }
 
-.projects-heading-div > * {
-  flex: 1;
+.projects-hero__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #00d4ff;
+  border: 1px solid rgba(0, 212, 255, 0.25);
+  background: rgba(0, 212, 255, 0.07);
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-family: "Inter", sans-serif;
+  animation: fadeInDown 0.6s ease both;
 }
 
-.projects-heading-img-div {
+.projects-hero__tag-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #00d4ff;
+  box-shadow: 0 0 8px rgba(0, 212, 255, 0.8);
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.projects-hero__title {
+  font-size: 3.8rem;
+  font-family: "Google Sans Bold", "Inter", sans-serif;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.05;
+  animation: fadeInUp 0.7s ease 0.1s both;
+}
+
+.projects-hero__subtitle {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  max-width: 620px;
+  margin: 0;
+  font-family: "Inter", "Google Sans Regular", sans-serif;
+  animation: fadeInUp 0.7s ease 0.2s both;
+}
+
+/* ── Stats bar ── */
+.projects-stats-bar {
   display: flex;
   align-items: center;
+  gap: 1.5rem;
+  background: rgba(13, 21, 38, 0.6);
+  border: 1px solid rgba(0, 212, 255, 0.12);
+  border-radius: 999px;
+  padding: 0.8rem 2rem;
+  backdrop-filter: blur(16px);
+  animation: fadeInUp 0.7s ease 0.35s both;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-.projects-heading-text-div {
-  text-align: center;
+.projects-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
 }
 
-.projects-heading-img-div > * {
-  max-width: 100%;
-  height: auto;
+.projects-stat__num {
+  font-size: 1.1rem;
+  font-weight: 800;
+  font-family: "Google Sans Bold", sans-serif;
+  background: linear-gradient(135deg, #00d4ff, #7b2fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
 }
 
-.projects-heading-text {
-  font-size: 56px;
-  font-weight: 400;
-  font-family: "Google Sans Medium";
-  line-height: 1.1;
-  text-align: center;
-  margin-top: 80px;
+.projects-stat__label {
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: #4a6a8a;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-family: "Inter", sans-serif;
 }
 
-.projects-heading-sub-text {
-  font-size: 30px;
-  font-family: "Google Sans Regular";
-  text-align: center;
-  margin-bottom: 10px;
+.projects-stat-divider {
+  width: 1px;
+  height: 28px;
+  background: rgba(0, 212, 255, 0.15);
 }
 
-.projects-header-detail-text {
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: "Google Sans Medium";
+/* ── Project grid ── */
+.projects-grid-section {
+  padding: 0 2rem 2rem;
 }
-.publications-heading-text-div {
+
+.repo-cards-div-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ── More CTA ── */
+.projects-more-cta {
   text-align: center;
-  font-family: "Google Sans Regular";
-  margin-top: 70px;
+  padding: 2rem 1rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.projects-more-text {
+  font-size: 0.9rem;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+
+/* ── Publications ── */
+.publications-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.publications-hero {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .publications-heading-text {
-  font-size: 56px;
-  font-weight: 600;
-}
-.repo-cards-div-main {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1rem 1rem;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 60px;
+  font-size: 2.8rem;
+  font-family: "Google Sans Bold", "Inter", sans-serif;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.1;
 }
 
-@media (max-width: 1380px) {
-  .projects-heading-text {
-    font-size: 50px;
-    margin-top: 80px;
-  }
-  .projects-heading-sub-text {
-    font-size: 25px;
+.publications-cards {
+  grid-template-columns: 1fr;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Legacy compatibility */
+.basic-projects {
+  display: none;
+}
+.projects-heading-div {
+  display: none;
+}
+.projects-heading-text {
+  display: none;
+}
+.project-button {
+  margin: 0 auto;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1200px) {
+  .repo-cards-div-main {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
-  .projects-heading-text,
-  .publications-heading-text {
-    font-size: 30px;
-    margin-top: 20px;
+  .projects-hero {
+    padding: 3.5rem 1rem 2rem;
   }
 
-  .projects-heading-sub-text {
-    font-size: 20px;
+  .projects-hero__title {
+    font-size: 2.4rem;
   }
 
-  .projects-heading-div {
-    flex-direction: column;
-  }
-
-  .projects-header-detail-text {
-    font-size: 16px;
-    margin-right: 0px;
-    margin-left: 0px;
-    line-height: normal;
-    text-align: center;
+  .projects-hero__subtitle {
+    font-size: 0.92rem;
   }
 
   .repo-cards-div-main {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 30px;
+    grid-template-columns: 1fr;
+    padding: 0 0.5rem;
+  }
+
+  .projects-grid-section {
+    padding: 0 1rem 2rem;
+  }
+
+  .projects-stats-bar {
+    gap: 1rem;
+    padding: 0.8rem 1.2rem;
   }
 }

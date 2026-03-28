@@ -1,64 +1,112 @@
+/* ============================================================
+   Certification Card — Neural Interface 2026
+   ============================================================ */
+
 .cert-card {
   width: 30%;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: stretch;
   text-align: center;
-  border: 1px solid #d9dbdf;
-  border-radius: 5px;
-  box-shadow: 5px 5px 5px #d9dbdf;
-  margin-bottom: 30px;
+  border: 1px solid rgba(0, 212, 255, 0.12);
+  border-radius: 16px;
+  background: rgba(13, 21, 38, 0.8);
+  backdrop-filter: blur(16px);
+  margin-bottom: 24px;
   flex: 0 0 30%;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+}
+
+.cert-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #00d4ff, #7b2fff);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0, 212, 255, 0.35);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4), 0 0 24px rgba(0, 212, 255, 0.1);
+}
+
+.cert-card:hover::before {
+  opacity: 1;
 }
 
 .cert-header {
-  margin: 0px;
-  border-radius: 5px 5px 0px 0px;
+  margin: 0;
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .logo_img {
-  margin: 3px;
+  margin: 1.2rem auto 0.8rem;
   width: auto;
-  height: 100px;
+  height: 70px;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease;
+}
+
+.cert-card:hover .logo_img {
+  transform: scale(1.05);
 }
 
 .cert-body {
-  margin: 0px;
+  padding: 0 1rem 1.2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .cert-body-title {
-  font-family: "Google Sans Regular";
-  font-size: 20px;
-  margin: 10px;
+  font-family: "Google Sans Bold", "Inter", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #e8f4fd;
+  margin: 0;
+  line-height: 1.35;
 }
 
 .cert-body-subtitle {
-  font-family: "Google Sans Regular";
-  font-size: 18px;
-  color: #808080;
-  margin: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #7a9cbf;
+  margin: 0;
 }
 
+/* Hover overlay to reveal "View Certificate" */
 .content {
   position: relative;
   width: 100%;
-  margin: auto;
   overflow: hidden;
 }
 
 .content .content-overlay {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(5, 9, 20, 0.85);
+  backdrop-filter: blur(8px);
   position: absolute;
-  height: 99%;
+  height: 100%;
   width: 100%;
   left: 0;
   top: 0;
-  bottom: 0;
-  right: 0;
   opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
+  transition: opacity 0.35s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .content:hover .content-overlay {
@@ -68,32 +116,26 @@
 .content-details {
   position: absolute;
   text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
   width: 100%;
   top: 50%;
   left: 50%;
   opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+  transform: translate(-50%, -50%) translateY(10px);
+  transition: all 0.3s ease;
 }
 
 .content:hover .content-details {
-  top: 50%;
-  left: 50%;
   opacity: 1;
+  transform: translate(-50%, -50%) translateY(0);
 }
 
 .content-details h3 {
-  color: #fff;
-  font-weight: 500;
-  font-family: "Google Sans Regular";
-  letter-spacing: 0.15em;
-  margin-bottom: 0.5em;
+  color: #00d4ff;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 0;
   text-transform: uppercase;
 }
 
@@ -101,11 +143,10 @@
   top: 20%;
 }
 
-@media (max-width: 1380px) {
-}
-
+/* ── Responsive ── */
 @media (max-width: 768px) {
   .cert-card {
     width: 100%;
+    flex: 0 0 100%;
   }
 }

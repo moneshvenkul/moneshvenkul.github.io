@@ -1,88 +1,397 @@
+/* ============================================================
+   Experience Page — Neural Interface 2026
+   ============================================================ */
+
 .experience-main {
   width: 100%;
 }
 
-.basic-experience {
-  margin-left: 5%;
-  margin-right: 5%;
+/* ── Hero ── */
+.experience-hero {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5rem 1rem 3rem;
+  text-align: center;
 }
 
-.experience-heading-div {
+.experience-hero__inner {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1rem;
 }
 
-.experience-heading-div > * {
-  flex: 1;
+.experience-hero__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #00d4ff;
+  border: 1px solid rgba(0, 212, 255, 0.25);
+  background: rgba(0, 212, 255, 0.07);
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-family: "Inter", sans-serif;
+  animation: fadeInDown 0.6s ease both;
 }
 
-.experience-heading-img-div {
+.experience-hero__tag-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #00d4ff;
+  box-shadow: 0 0 8px rgba(0, 212, 255, 0.8);
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.experience-hero__title {
+  font-size: 4rem;
+  font-family: "Google Sans Bold", "Inter", sans-serif;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.05;
+  animation: fadeInUp 0.7s ease 0.1s both;
+}
+
+.experience-hero__subtitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: "Google Sans Bold", "Inter", sans-serif;
+  margin: 0;
+  animation: fadeInUp 0.7s ease 0.2s both;
+}
+
+.experience-hero__desc {
+  font-size: 1rem;
+  line-height: 1.75;
+  max-width: 680px;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  animation: fadeInUp 0.7s ease 0.3s both;
+}
+
+/* Metrics strip */
+.experience-metrics {
   display: flex;
   align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
   justify-content: center;
+  animation: fadeInUp 0.7s ease 0.4s both;
+  padding: 0.8rem 1.4rem;
+  background: rgba(13, 21, 38, 0.5);
+  border: 1px solid rgba(0, 212, 255, 0.1);
+  border-radius: 999px;
+  backdrop-filter: blur(12px);
 }
 
-.experience-heading-text-div {
-  text-align: center;
+.experience-metric {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
-.experience-heading-img-div > * {
-  max-width: 100%;
-  height: auto;
+.experience-metric__icon {
+  font-size: 0.85rem;
 }
 
-.experience-heading-text {
-  font-size: 56px;
-  font-weight: 400;
-  font-family: "Google Sans Medium";
-  line-height: 1.1;
-  text-align: center;
-  margin-top: 80px;
+.experience-metric__text {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #7a9cbf;
+  font-family: "Inter", sans-serif;
 }
 
-.experience-heading-sub-text {
-  font-size: 30px;
+.experience-metric-sep {
+  color: #4a6a8a;
+  font-size: 1.1rem;
+}
+
+/* ── Legacy styles for ExperienceAccordion children ── */
+
+/* These are used by ExperienceCard inside the accordion */
+.experience-card {
+  min-width: 350px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+  margin-left: 10px;
+  color: #c8dff0;
+  background: rgba(13, 21, 38, 0.8);
+  border: 1px solid rgba(0, 212, 255, 0.1);
+  backdrop-filter: blur(12px);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #00d4ff, #7b2fff);
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.experience-card:hover {
+  border-color: rgba(0, 212, 255, 0.28);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 212, 255, 0.07);
+  transform: translateX(3px);
+}
+
+.experience-card:hover::before {
+  opacity: 1;
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-right: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  z-index: 100;
+}
+
+.experience-card-logo-div {
+  margin: 10px;
+  margin-top: -10px;
+}
+
+.experience-card-stepper {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -40px;
+}
+
+.experience-card-body-div {
+  width: 100%;
+}
+
+.experience-card-header-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.experience-card-logo {
+  width: 70px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 212, 255, 0.15);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.experience-card-title {
+  font-family: "Google Sans Bold", "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  margin-left: 0;
+  margin-right: 7px;
+  text-align: left;
+  color: #e8f4fd;
+}
+
+.experience-card-company {
   font-family: "Google Sans Regular";
-  text-align: center;
-  margin-bottom: 10px;
+  margin: 0;
+  text-align: left;
 }
 
-.experience-header-detail-text {
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 0px;
-  margin-left: 20px;
+.experience-card-duration {
+  font-family: "Google Sans Regular";
+  margin-top: 10px;
+  margin-bottom: 2px;
+  text-align: right;
+  color: #4a6a8a;
+  font-size: 0.82rem;
+}
+
+.experience-card-heading-left {
+  float: left;
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+.experience-card-heading-right {
+  float: right;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.experience-card-location {
+  font-family: "Google Sans Regular";
+  margin: 0;
+  text-align: right;
+  color: #4a6a8a;
+  font-size: 0.78rem;
+}
+
+.experience-card-description {
+  margin-top: 8px;
+  margin-left: 10px;
+  text-align: left;
   margin-right: 20px;
-  font-family: "Google Sans Medium";
+  font-family: "Inter", "Google Sans Regular", sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: #8ab4cf;
 }
 
-@media (max-width: 1380px) {
-  .experience-heading-text {
-    font-size: 50px;
-    margin-top: 80px;
+.experience-card-company > a {
+  position: relative;
+  color: #00d4ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.experience-card-company > a:hover {
+  color: #44e0ff;
+}
+
+.experience-card-company > a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.experience-card-company > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #00d4ff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.experience-list-item {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+@keyframes ripple {
+  0% {
+    left: 5px;
+    top: 5px;
+    opacity: 0.75;
+    width: 0;
+    height: 0;
   }
-  .experience-heading-sub-text {
-    font-size: 25px;
+  100% {
+    left: -20px;
+    top: -20px;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 1380px) {
+  .experience-hero__title {
+    font-size: 3rem;
+  }
+  .experience-hero__subtitle {
+    font-size: 1.1rem;
   }
 }
 
 @media (max-width: 768px) {
-  .experience-heading-text {
-    font-size: 30px;
-    margin-top: 20px;
+  .experience-hero {
+    padding: 3.5rem 1rem 2rem;
+  }
+  .experience-hero__title {
+    font-size: 2.2rem;
+  }
+  .experience-hero__subtitle {
+    font-size: 0.95rem;
+  }
+  .experience-hero__desc {
+    font-size: 0.88rem;
   }
 
-  .experience-heading-sub-text {
-    font-size: 20px;
+  .experience-metrics {
+    gap: 0.5rem;
+    padding: 0.7rem 1rem;
+    font-size: 0.7rem;
   }
 
-  .experience-heading-div {
+  .experience-metric-sep {
+    display: none;
+  }
+
+  .experience-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .arrow-left {
+    display: none;
+  }
+  .experience-card-stepper {
+    display: none;
+  }
+  .experience-list-item {
+    flex-direction: column;
+  }
+  .experience-card-logo {
+    width: 100px;
+  }
+
+  .experience-card-heading-left,
+  .experience-card-heading-right {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .experience-card-header-div {
     flex-direction: column;
   }
 
-  .experience-header-detail-text {
-    font-size: 16px;
-    margin-right: 0px;
-    line-height: normal;
-    text-align: center;
+  .experience-card-description {
+    margin-left: 14px;
+    margin-right: 14px;
+    text-align: left;
   }
+}
+
+/* Legacy compatibility stubs */
+.basic-experience {
+  display: none;
+}
+.experience-heading-div {
+  display: none;
+}
+.experience-heading-text {
+  display: none;
+}
+.experience-heading-sub-text {
+  display: none;
+}
+.experience-header-detail-text {
+  display: none;
+}
+.experience-heading-img-div {
+  display: none;
+}
+.experience-heading-text-div {
+  display: none;
 }

@@ -1,1 +1,144 @@
-{"data":[{"id":"MDEwOlJlcG9zaXRvcnkzMjgxOTMzMTU=","name":"Jarvis","createdAt":"2021-01-09T16:08:58Z","url":"https://github.com/moneshvenkul/Jarvis","description":null,"isFork":false,"languages":[{"name":"Python","iconifyClass":"logos-python"}]},{"id":"MDEwOlJlcG9zaXRvcnkyNDcyMzcxNjc=","name":"Cloud_Encryption","createdAt":"2020-03-14T08:09:48Z","url":"https://github.com/moneshvenkul/Cloud_Encryption","description":null,"isFork":false,"languages":[{"name":"Python","iconifyClass":"logos-python"},{"name":"HTML","iconifyClass":"logos-html-5"},{"name":"JavaScript","iconifyClass":"logos-javascript"},{"name":"CSS","iconifyClass":"logos-css-3"}]},{"id":"MDEwOlJlcG9zaXRvcnkxODYzNzIwNzg=","name":"CSS-linear-gradient-selector","createdAt":"2019-05-13T07:55:39Z","url":"https://github.com/moneshvenkul/CSS-linear-gradient-selector","description":null,"isFork":false,"languages":[{"name":"HTML","iconifyClass":"logos-html-5"},{"name":"JavaScript","iconifyClass":"logos-javascript"},{"name":"CSS","iconifyClass":"logos-css-3"}]},{"id":"MDEwOlJlcG9zaXRvcnkxOTAzODE5ODQ=","name":"Face-recognition-Web","createdAt":"2019-06-05T11:25:55Z","url":"https://github.com/moneshvenkul/Face-recognition-Web","description":null,"isFork":false,"languages":[{"name":"HTML","iconifyClass":"logos-html-5"},{"name":"CSS","iconifyClass":"logos-css-3"},{"name":"JavaScript","iconifyClass":"logos-javascript"}]},{"id":"MDEwOlJlcG9zaXRvcnkxOTMzMjM3NzE=","name":"Japanese-Phrases-App","createdAt":"2019-06-23T08:25:16Z","url":"https://github.com/moneshvenkul/Japanese-Phrases-App","description":null,"isFork":false,"languages":[]},{"id":"MDEwOlJlcG9zaXRvcnkxOTAzODAzMzQ=","name":"roboFriends","createdAt":"2019-06-05T11:13:04Z","url":"https://github.com/moneshvenkul/roboFriends","description":null,"isFork":false,"languages":[{"name":"HTML","iconifyClass":"logos-html-5"},{"name":"JavaScript","iconifyClass":"logos-javascript"},{"name":"CSS","iconifyClass":"logos-css-3"}]}]}
+{
+  "data": [
+    {
+      "id": "proj-001",
+      "name": "RAG Financial Intelligence Platform",
+      "createdAt": "2025-06-01T00:00:00Z",
+      "url": "https://github.com/moneshvenkul",
+      "description": "Production RAG pipeline enabling wealth managers to query thousands of financial documents in plain English. LangChain + Pinecone + Neo4j graph database. Adopted by 3 enterprise teams at Fidelity in 4 weeks. 58% query latency reduction via multi-hop graph traversal.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "TypeScript",
+          "iconifyClass": "logos-typescript-icon"
+        },
+        {
+          "name": "Next.js",
+          "iconifyClass": "logos-nextjs-icon"
+        },
+        {
+          "name": "Neo4j",
+          "iconifyClass": "simple-icons:neo4j"
+        }
+      ]
+    },
+    {
+      "id": "proj-002",
+      "name": "AI Meal Planner",
+      "createdAt": "2024-08-15T00:00:00Z",
+      "url": "https://github.com/moneshvenkul",
+      "description": "Personalized meal planning app powered by OpenAI API and RAG architecture. Achieves 40% reduction in irrelevant recommendations via vector similarity search over nutritional embeddings. Built with Next.js 14, Pinecone, and PostgreSQL. Sub-2s response times with Redis caching.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "TypeScript",
+          "iconifyClass": "logos-typescript-icon"
+        },
+        {
+          "name": "Next.js",
+          "iconifyClass": "logos-nextjs-icon"
+        },
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "PostgreSQL",
+          "iconifyClass": "logos-postgresql"
+        }
+      ]
+    },
+    {
+      "id": "proj-003",
+      "name": "Sketch-to-Image Generative AI",
+      "createdAt": "2024-03-20T00:00:00Z",
+      "url": "https://github.com/moneshvenkul",
+      "description": "Real-time sketch-to-photorealistic image generator using Stable Diffusion + ControlNet. Sub-3s end-to-end latency with Python FastAPI backend and React canvas frontend. Supports 10+ artistic styles and iterative refinement through chat-style prompts.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "React",
+          "iconifyClass": "logos-react"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        }
+      ]
+    },
+    {
+      "id": "proj-004",
+      "name": "GraphQL API Gateway",
+      "createdAt": "2024-01-10T00:00:00Z",
+      "url": "https://github.com/moneshvenkul",
+      "description": "High-performance GraphQL API gateway with Redis caching and Apollo Federation. Unified 5 microservices into a single federated graph, reducing client-side over-fetching by 60% and average API response time by 45%. Supports real-time subscriptions via WebSocket.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "TypeScript",
+          "iconifyClass": "logos-typescript-icon"
+        },
+        {
+          "name": "Node.js",
+          "iconifyClass": "logos-nodejs-icon-alt"
+        },
+        {
+          "name": "Redis",
+          "iconifyClass": "logos-redis"
+        },
+        {
+          "name": "Docker",
+          "iconifyClass": "logos-docker-icon"
+        }
+      ]
+    },
+    {
+      "id": "proj-005",
+      "name": "Cloud Encryption Platform",
+      "createdAt": "2020-03-14T00:00:00Z",
+      "url": "https://github.com/moneshvenkul/Cloud_Encryption",
+      "description": "Multi-layer security platform for cloud storage using AES-256 + RSA hybrid encryption. Research published in Scopus-indexed journal. Python backend with web interface for key management, file encryption, and access control auditing.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        },
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "logos-css-3"
+        }
+      ]
+    },
+    {
+      "id": "proj-006",
+      "name": "Jarvis AI Assistant",
+      "createdAt": "2021-01-09T00:00:00Z",
+      "url": "https://github.com/moneshvenkul/Jarvis",
+      "description": "Voice-activated AI assistant built with Python NLP pipelines — web search, system control, weather, news, and task automation. Early exploration of conversational AI and intent classification that later informed production RAG pipeline design.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        }
+      ]
+    }
+  ]
+}
