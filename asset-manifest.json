@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.2dff94c7.chunk.css",
-    "main.js": "./static/js/main.a017aca6.chunk.js",
-    "main.js.map": "./static/js/main.a017aca6.chunk.js.map",
+    "main.css": "./static/css/main.d09ee73c.chunk.css",
+    "main.js": "./static/js/main.f94ade46.chunk.js",
+    "main.js.map": "./static/js/main.f94ade46.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.010d0e8e.js",
     "runtime-main.js.map": "./static/js/runtime-main.010d0e8e.js.map",
-    "static/js/2.312bd7df.chunk.js": "./static/js/2.312bd7df.chunk.js",
-    "static/js/2.312bd7df.chunk.js.map": "./static/js/2.312bd7df.chunk.js.map",
+    "static/js/2.b0691612.chunk.js": "./static/js/2.b0691612.chunk.js",
+    "static/js/2.b0691612.chunk.js.map": "./static/js/2.b0691612.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.ae46982787e7cee480310826db4769fd.js": "./precache-manifest.ae46982787e7cee480310826db4769fd.js",
+    "precache-manifest.c3cf42d61132ec9c024883c43c168fc7.js": "./precache-manifest.c3cf42d61132ec9c024883c43c168fc7.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.2dff94c7.chunk.css.map": "./static/css/main.2dff94c7.chunk.css.map",
+    "static/css/main.d09ee73c.chunk.css.map": "./static/css/main.d09ee73c.chunk.css.map",
     "static/media/index.css": "./static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/AlmaBetter_Logo.jpg": "./static/media/AlmaBetter_Logo.c24f4be5.jpg",
     "static/media/Capital_One-Logo.png": "./static/media/Capital_One-Logo.0a71b796.png",
@@ -37,6 +37,7 @@
     "static/media/experience.svg": "./static/media/experience.a00ede3f.svg",
     "static/media/all.css": "./static/media/fa-solid-900.8e4a6dcc.eot",
     "static/media/feelingProud.svg": "./static/media/feelingProud.2936ce95.svg",
+    "static/media/fidelity_logo.svg": "./static/media/fidelity_logo.87cf8519.svg",
     "static/media/fullstack.svg": "./static/media/fullstack.fce60807.svg",
     "static/media/gcp_logo.png": "./static/media/gcp_logo.0ee7e8c9.png",
     "static/media/github_logo.png": "./static/media/github_logo.6eeb2e81.png",
@@ -77,8 +78,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.010d0e8e.js",
-    "static/js/2.312bd7df.chunk.js",
-    "static/css/main.2dff94c7.chunk.css",
-    "static/js/main.a017aca6.chunk.js"
+    "static/js/2.b0691612.chunk.js",
+    "static/css/main.d09ee73c.chunk.css",
+    "static/js/main.f94ade46.chunk.js"
   ]
 }

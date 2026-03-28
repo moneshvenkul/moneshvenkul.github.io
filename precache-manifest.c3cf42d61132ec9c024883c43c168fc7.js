@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f7ba9bbd87d84d7ee29f23b039a0335b",
+    "revision": "1e7e9fd6e362a8e7fe2e9ed54be4ac2a",
     "url": "./index.html"
   },
   {
-    "revision": "f879822d55b40d54736c",
-    "url": "./static/css/main.2dff94c7.chunk.css"
+    "revision": "2cfcd0aa96a6de8b67bb",
+    "url": "./static/css/main.d09ee73c.chunk.css"
   },
   {
-    "revision": "a3c671b9a67386ed7c69",
-    "url": "./static/js/2.312bd7df.chunk.js"
+    "revision": "62b07cce958b586a6b3d",
+    "url": "./static/js/2.b0691612.chunk.js"
   },
   {
-    "revision": "f879822d55b40d54736c",
-    "url": "./static/js/main.a017aca6.chunk.js"
+    "revision": "2cfcd0aa96a6de8b67bb",
+    "url": "./static/js/main.f94ade46.chunk.js"
   },
   {
     "revision": "cc6a6fc7c9c166e96e3e",
@@ -206,6 +206,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2936ce95f550e3feef7230ea543a4b60",
     "url": "./static/media/feelingProud.2936ce95.svg"
+  },
+  {
+    "revision": "87cf85199ec06d7bd9a61caf97f71e41",
+    "url": "./static/media/fidelity_logo.87cf8519.svg"
   },
   {
     "revision": "fce6080726685cabdb4f75a0d8018325",
