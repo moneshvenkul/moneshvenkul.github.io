@@ -5,7 +5,9 @@
       "Bash(xargs wc:*)",
       "Bash(npm run:*)",
       "Bash(npm install:*)",
-      "Bash(set NODE_OPTIONS=--openssl-legacy-provider)"
+      "Bash(set NODE_OPTIONS=--openssl-legacy-provider)",
+      "Bash(wc -c \"c:/Workspace/moneshvenkul.github.io/public/MyPic.jpg\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)"
     ]
   }
 }

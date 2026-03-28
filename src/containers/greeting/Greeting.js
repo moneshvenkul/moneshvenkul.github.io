@@ -4,7 +4,7 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
-import FeelingProud from "./FeelingProud";
+import myPic from "../../assests/images/MyPic.jpg";
 
 const roles = [
   "Senior Software Engineer",
@@ -269,7 +269,17 @@ export default function Greeting(props) {
                 AWS Certified
               </div>
             </div>
-            <FeelingProud theme={theme} />
+            <div className="greeting-avatar-frame">
+              <div className="greeting-avatar-glow" />
+              <div className="greeting-avatar-ring greeting-avatar-ring--outer" />
+              <div className="greeting-avatar-ring greeting-avatar-ring--inner" />
+              <img
+                src={myPic}
+                alt="Monesh Venkul Vommi"
+                className="greeting-avatar-photo"
+              />
+              <div className="greeting-avatar-scan" />
+            </div>
           </div>
         </div>
       </Fade>
