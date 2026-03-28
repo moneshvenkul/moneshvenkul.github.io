@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bd1f419e128b0d7caedf7481d2ac0ea1",
+    "revision": "dcfc5b8a18c72e3efcc37873a48fafd3",
     "url": "./index.html"
   },
   {
-    "revision": "f0f5bd8a40aec2b57e5b",
-    "url": "./static/css/main.1185a223.chunk.css"
+    "revision": "afac5dada715a7bf8547",
+    "url": "./static/css/main.fd0faf65.chunk.css"
   },
   {
-    "revision": "c3b859842acec959671c",
-    "url": "./static/js/2.a6adc808.chunk.js"
+    "revision": "e5a3a4c5cdfd96732f49",
+    "url": "./static/js/2.9330a4f8.chunk.js"
   },
   {
-    "revision": "f0f5bd8a40aec2b57e5b",
-    "url": "./static/js/main.5360934c.chunk.js"
+    "revision": "afac5dada715a7bf8547",
+    "url": "./static/js/main.9b73be48.chunk.js"
   },
   {
     "revision": "cc6a6fc7c9c166e96e3e",
@@ -78,6 +78,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "dcd6dee2bd7458a4a576dc131506fd83",
     "url": "./static/media/animated_logo.dcd6dee2.svg"
+  },
+  {
+    "revision": "f42a870dff4d55ab3ee9fd5663da63df",
+    "url": "./static/media/ascendion_logo.f42a870d.svg"
+  },
+  {
+    "revision": "ae83aa3e8c8bcf23345614e8f3dcd100",
+    "url": "./static/media/aws_logo.ae83aa3e.svg"
   },
   {
     "revision": "058eca4cbdc03a1dad9a6bb943ac7831",
