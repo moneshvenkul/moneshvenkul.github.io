@@ -24,6 +24,7 @@ export default function socialMedia(props) {
             className={`icon-button`}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={media.name}
           >
             <IconWrapper {...media} {...props}>
               <i className={`fab ${media.fontAwesomeIcon}`}></i>

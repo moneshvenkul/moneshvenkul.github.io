@@ -4,7 +4,8 @@
       "Bash(wc -l /c/Workspace/moneshvenkul.github.io/src/**/*.js)",
       "Bash(xargs wc:*)",
       "Bash(npm run:*)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(set NODE_OPTIONS=--openssl-legacy-provider)"
     ]
   }
 }

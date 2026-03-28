@@ -96,6 +96,7 @@
   flex-direction: column;
   padding: 10px;
   margin-left: 10px;
+  color: #c8dff0;
   -webkit-box-shadow: 4px 3px 20px -2px grey;
   -moz-box-shadow: 4px 3px 20px -2px grey;
   box-shadow: 4px 3px 20px -2px grey;
@@ -197,12 +198,12 @@
 
 .experience-card-company > a {
   position: relative;
-  color: #000;
+  color: #00d4ff;
   text-decoration: none;
 }
 
 .experience-card-company > a:hover {
-  color: #000;
+  color: #44e0ff;
 }
 
 .experience-card-company > a:hover:before {
@@ -218,7 +219,7 @@
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #00d4ff;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);

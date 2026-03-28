@@ -24,8 +24,7 @@ const greeting = {
   nickname: "monesh_venkul",
   subTitle:
     "Full-stack & AI engineer with 7+ years across fintech, enterprise, and edtech. Built Fidelity's first production RAG pipeline — adopted by 3 enterprise teams in 4 weeks. AWS Solutions Architect Certified. I work best where AI meets distributed systems and there's a real latency or scale problem to solve.",
-  resumeLink:
-    "https://unhnewhaven-my.sharepoint.com/:b:/g/personal/mvomm1_unh_newhaven_edu/EWst9Ou7KyFHvvSzI3P8X_gBMGvqK8BTM5RnZg1xDxKgHw?e=Dan4ZB",
+  resumeLink: "./Monesh_Venkul_Resume.pdf",
   portfolio_repository:
     "https://github.com/moneshvenkul/moneshvenkul.github.io",
   githubProfile: "https://github.com/moneshvenkul",
@@ -47,7 +46,7 @@ const socialMediaLinks = [
   {
     name: "Gmail",
     link: "mailto:mvvenkul@gmail.com",
-    fontAwesomeIcon: "fa-google",
+    fontAwesomeIcon: "fa-envelope",
     backgroundColor: "#D14836",
   },
   {
@@ -315,7 +314,7 @@ const certifications = {
     {
       title: "AWS Certified Solutions Architect – Associate",
       subtitle: "Amazon Web Services",
-      logo_path: "aws_logo.png",
+      logo_path: "aws_logo.svg",
       certificate_link: "https://www.credly.com/badges/",
       alt_name: "AWS",
       color_code: "#FF990099",
@@ -408,7 +407,7 @@ const experience = {
           title: "Senior Full Stack Developer",
           company: "Ascendion",
           company_url: "https://ascendion.com/",
-          logo_path: "Capital_One-Logo.png",
+          logo_path: "ascendion_logo.svg",
           duration: "March 2024 – May 2025",
           location: "Roanoke, TX",
           description:
