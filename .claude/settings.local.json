@@ -13,7 +13,14 @@
       "Bash(do basename:*)",
       "Bash(grep -E \"export const \\(blogPosts|digestIssues|dsaPatterns|systemDesignTemplates|behavioralQuestions|systemDesignCards|resumeEnhancementRules|techStackOptions|techStackRecommendations|defaultTechStack|currentlyBuilding|currentlyLearning|weeklyActivity|leetcodeStats|openSourceActivity\\)\" /c/Workspace/moneshvenkul.github.io/src/data/*.js)",
       "Read(//c/Workspace/moneshvenkul.github.io/**)",
-      "Bash(claude --version)"
+      "Bash(claude --version)",
+      "Bash(find /c/Workspace/moneshvenkul.github.io/src -type f \\\\\\(-name *.js -o -name *.jsx -o -name *.json \\\\\\))",
+      "Bash(find /c/Workspace/moneshvenkul.github.io/src/assests -type f \\\\\\(-name *.png -o -name *.jpg -o -name *.svg -o -name *.jpeg \\\\\\))",
+      "Bash(find /c/Workspace/moneshvenkul.github.io/src -type f \\\\\\(-name *fidelity* -o -name *stem* -o -name *haven* -o -name *.png -o -name *.jpg \\\\\\))",
+      "WebFetch(domain:www.fidelity.com)",
+      "WebFetch(domain:upload.wikimedia.org)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "Bash(NODE_OPTIONS=--openssl-legacy-provider npm run build)"
     ]
   }
 }

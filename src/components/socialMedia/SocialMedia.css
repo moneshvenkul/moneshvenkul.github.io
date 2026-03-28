@@ -62,6 +62,19 @@
   transition: 0.3s ease-in;
 } */
 
+/* Custom SVG icon (e.g. LeetCode) */
+.icon-button i.custom-svg-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+}
+.icon-button i.custom-svg-icon svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: white;
+}
+
 /* Media Query */
 @media (max-width: 768px) {
   .social-media-div {

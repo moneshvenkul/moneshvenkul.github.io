@@ -9,27 +9,19 @@ export default function PublicationCard({ pub, theme }) {
   }
 
   return (
-    <div
-      className="publication-card-div"
-      style={{ backgroundColor: theme.highlight }}
-    >
+    <div className="publication-card-div">
       <Fade bottom duration={2000} distance="40px">
         <div key={pub.id} onClick={() => openPubinNewTab(pub.url)}>
           <div className="publication-name-div">
-            <p className="publication-name" style={{ color: theme.text }}>
-              {pub.name}
-            </p>
+            <p className="publication-name">{pub.name}</p>
           </div>
-          <p className="publication-description" style={{ color: theme.text }}>
-            {pub.description}
-          </p>
+          <p className="publication-description">{pub.description}</p>
           <div className="publication-details">
-            <p
-              className="publication-creation-date subTitle"
-              style={{ color: theme.secondaryText }}
-            >
-              Published on {pub.createdAt.split("T")[0]}
+            <p className="publication-creation-date subTitle">
+              Published {pub.createdAt.split("T")[0]}
             </p>
+            <span className="publication-badge">Scopus Indexed</span>
+            <span className="publication-cta">Read →</span>
           </div>
           {/* <div className="repo-stats">
           <div className="repo-left-stat">

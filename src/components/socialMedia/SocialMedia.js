@@ -17,6 +17,7 @@ export default function socialMedia(props) {
   return (
     <div className="social-media-div">
       {socialMediaLinks.map((media, i) => {
+        const prefix = media.fontAwesomePrefix || "fab";
         return (
           <a
             key={i}
@@ -27,9 +28,16 @@ export default function socialMedia(props) {
             aria-label={media.name}
           >
             <IconWrapper {...media} {...props}>
-              <i className={`fab ${media.fontAwesomeIcon}`}></i>
+              {media.customSvg ? (
+                <i
+                  className="custom-svg-icon"
+                  style={{ color: "white" }}
+                  dangerouslySetInnerHTML={{ __html: media.customSvg }}
+                />
+              ) : (
+                <i className={`${prefix} ${media.fontAwesomeIcon}`}></i>
+              )}
             </IconWrapper>
-            {/* <span></span> */}
           </a>
         );
       })}
